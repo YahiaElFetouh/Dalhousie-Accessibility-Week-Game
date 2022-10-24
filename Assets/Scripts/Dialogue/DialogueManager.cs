@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,8 +17,6 @@ public class DialogueManager : MonoBehaviour
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
-
-
 
     private Story currentStory;
     public bool dialogueIsPlaying;
@@ -63,7 +62,7 @@ public class DialogueManager : MonoBehaviour
             return;
         } 
 
-        if (Input.GetKeyDown("space"))
+        if (currentStory.currentChoices.Count == 0 && Input.GetKeyDown("space"))
         {
             ContinueStory();
         }
@@ -132,7 +131,21 @@ public class DialogueManager : MonoBehaviour
         }
 
 
-
+        StartCoroutine(SelectFirstChoice());
     }
 
+
+    private IEnumerator SelectFirstChoice()
+    {
+        // Event System needs to be cleared first then wait at least for one frame 
+
+        EventSystem.current.SetSelectedGameObject(null);
+        yield return new WaitForEndOfFrame();
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        currentStory.ChooseChoiceIndex(choiceIndex);
+    }
 }
