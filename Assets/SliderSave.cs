@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class SliderSave : MonoBehaviour
 {
     private new string name;
-    priv UnityEngine.UI.Slider slider;
+    private UnityEngine.UI.Slider slider;
 
     // Start is called before the first frame update
     void Start()
     {
         name = this.gameObject.name;
         slider = this.gameObject.GetComponent<UnityEngine.UI.Slider>();
-        float savedValue = PlayerPrefs.GetInt(name);
+        float savedValue = PlayerPrefs.GetFloat(name);
         
         if (PlayerPrefs.HasKey(name))
         {

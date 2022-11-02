@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ToggleSave : MonoBehaviour
 {
-    public new string name;
-    public UnityEngine.UI.Toggle toggle;
+    private new string name;
+    private UnityEngine.UI.Toggle toggle;
 
     // Start is called before the first frame update
     void Start()
