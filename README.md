@@ -10,3 +10,18 @@ We will be building a new game from scratch to address and educate accessibility
 
 
 It’s more important than ever that our team plan extensively on our approach in delivering a product to the client that meets their expectations. This document will outline the project in more detail highlighting its stakeholders, risks & our team's proposal and plan to bring our client's vision to life. 
+
+
+
+
+## Guide to Inital Unity Project Setup!
+Under UNITY INSPECTOR
+- Goto DialogTrigger.cs component, find ink JSON varibble input and set target to __________. (Test.txt)
+
+Under UNITY HIERARCH
+- Find NPC prefab, then in its collection find Trigger prefab and set its DialogTrigger.cs component to target to _________. (Test.txt)
+
+
+
+## References / Citations / Ressources / Acknowledgements:
+TBD.
