@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 598443835
+    locked: 0
+  - name: Characters
+    uniqueID: 1597249469
+    locked: 0
+  - name: Transitions
+    uniqueID: 419077601
+    locked: 0
