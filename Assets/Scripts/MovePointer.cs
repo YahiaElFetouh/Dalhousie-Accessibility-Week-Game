@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePointer : MonoBehaviour
 {
+    public GameObject quotesObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +17,33 @@ public class MovePointer : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            quotesObject.GetComponent<Quotes>().setLoadSceneName("NavMesh");
+            quotesObject.SetActive(true);
+            StartCoroutine(LoadYourAsyncScene());
             Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;
             transform.position = target;
         }
+    }
+
+    IEnumerator LoadYourAsyncScene()
+    {
+        // Set the current Scene to be able to unload it later
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // The Application loads the Scene in the background at the same time as the current Scene.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Load", LoadSceneMode.Additive);
+
+        // Wait until the last operation fully loads to return anything
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
+        quotesObject.SetActive(true);
+        SceneManager.MoveGameObjectToScene(quotesObject, SceneManager.GetSceneByName("Load"));
+        // Unload the previous Scene
+        SceneManager.UnloadSceneAsync(currentScene);
     }
 }
