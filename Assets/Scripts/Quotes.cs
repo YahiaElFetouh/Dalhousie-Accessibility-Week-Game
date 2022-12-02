@@ -12,58 +12,61 @@ public class Quotes : MonoBehaviour
     string[] sentences;
     byte count;
     TMP_Text TMP;
-    string loadSceneName;
     float time;
-    public byte waitTime;
+    float waitTime;
+    Color TMPColor;
+    bool fadingOut = false;
+    const byte maxColorValue = 1;
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Called start");
         time = 0;
-        waitTime = 2;
+        waitTime = 2f;
         sentences = new string[]
         {
             "sentence 1", "sentences 2", "sentence 3", "sentence 4", "sentence 5"
         };
         TMP = this.gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
         TMP.text = sentences[Random.Range(0, sentences.Length - 1)];
+        TMPColor = new Color(TMP.color.r, TMP.color.g, TMP.color.b, TMP.color.a);
+        TMP.color =  new Color(TMPColor.r, TMPColor.g, TMPColor.b, 0.1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if(time > waitTime)
+        if(TMP.alpha < 1f && !fadingOut)
         {
-            time = 0;
-            StartCoroutine(LoadYourAsyncScene());
-            this.gameObject.SetActive(false);
+            time += Time.deltaTime;
+            StartCoroutine(FadeTextToFullAlpha(1f, TMP));
+        }
+        else if (Input.anyKey)
+        {
+            StartCoroutine(FadeTextToZeroAlpha(4f, TMP));
         }
     }
 
-    IEnumerator LoadYourAsyncScene()
+    public IEnumerator FadeTextToFullAlpha(float t, TMP_Text i)
     {
-        // Set the current Scene to be able to unload it later
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        // The Application loads the Scene in the background at the same time as the current Scene.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(loadSceneName, LoadSceneMode.Additive);
-
-        // Wait until the last operation fully loads to return anything
-        while (!asyncLoad.isDone)
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 0.1f);
+        while (i.color.a < 1.0f)
         {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / t));
             yield return null;
         }
-
-        // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
-        SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName(loadSceneName));
-        // Unload the previous Scene
-        SceneManager.UnloadSceneAsync(currentScene);
-
     }
 
-    public void setLoadSceneName(string name)
+    public IEnumerator FadeTextToZeroAlpha(float t, TMP_Text i)
     {
-        loadSceneName = name;
+        fadingOut = true;
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 1f);
+        while (i.color.a > 0.0f)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, (i.color.a - (Time.deltaTime / t)));
+            yield return null;
+        }
+        Destroy(this.gameObject);
+        Debug.Log("Quotes object deleted");
     }
 }

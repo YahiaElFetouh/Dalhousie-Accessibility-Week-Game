@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MovePointer : MonoBehaviour
 {
+    public GameObject quotesObjectPrefab;
     public GameObject quotesObject;
+    string quoteObjectName;
+
     // Start is called before the first frame update
+    //TODO
+    //will this be invoked everytime object is active?
     void Start()
     {
+        quoteObjectName = "";
+        //Instantiate(quotesObjectPrefab);
         //Cursor.visible = false;
+
     }
 
     // Update is called once per frame
@@ -17,9 +25,10 @@ public class MovePointer : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            quotesObject.GetComponent<Quotes>().setLoadSceneName("NavMesh");
-            quotesObject.SetActive(true);
-            StartCoroutine(LoadYourAsyncScene());
+            if(quotesObject == null)
+            {
+                InstanstiateQuotesObject();
+            }
             Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;
             transform.position = target;
@@ -43,7 +52,13 @@ public class MovePointer : MonoBehaviour
         // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
         quotesObject.SetActive(true);
         SceneManager.MoveGameObjectToScene(quotesObject, SceneManager.GetSceneByName("Load"));
+      
         // Unload the previous Scene
         SceneManager.UnloadSceneAsync(currentScene);
+    }
+
+    void InstanstiateQuotesObject()
+    {
+        quotesObject = Instantiate(quotesObjectPrefab);
     }
 }
