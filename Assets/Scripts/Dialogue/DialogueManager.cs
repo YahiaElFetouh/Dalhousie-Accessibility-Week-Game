@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
     public bool dialogueIsPlaying;
+    public int lockTyping;
 
     private void Awake()
     {
@@ -100,13 +101,18 @@ public class DialogueManager : MonoBehaviour
             // set text for the current diaglogue line 
             //dialogueText.text = currentStory.Continue();
 
-            // This applies the replacement above by using a typwriter function
-            string textToType = currentStory.Continue();
-            // use the string textToType and start tying it to dialogueText (inside the box)
-            StartCoroutine(TypeText(textToType, dialogueText));
-            
-            // display choices, if any, for this dialogue line
-            displayChoices();
+            if (lockTyping == 0)
+            {
+
+                //lockTyping = 1;
+                // This applies the replacement above by using a typwriter function
+                string textToType = currentStory.Continue();
+                // use the string textToType and start tying it to dialogueText (inside the box)
+                StartCoroutine(TypeText(textToType, dialogueText));
+
+                // display choices, if any, for this dialogue line
+                displayChoices();
+            }
         }
         else
         {
@@ -115,10 +121,17 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    /**
+     * Method to type text by each characher (str), it gets locked until it 
+     * finishes to type in the dialog box(dialogueText) then unlocks for next
+     * textToType
+     * 
+     */
     private IEnumerator TypeText(string textToType, TextMeshProUGUI dialogueText)
     {
 
         dialogueText.text = string.Empty;
+        lockTyping = 1;
 
         //yield return new WaitForSeconds(1);
 
@@ -138,6 +151,10 @@ public class DialogueManager : MonoBehaviour
             yield return null;
 
         }
+
+   
+        
+        lockTyping = 0;
 
         dialogueText.text = textToType;
     }
