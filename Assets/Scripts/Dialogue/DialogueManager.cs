@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
 
+    [SerializeField] private float typeWriterSpeed = 30f;
+
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -21,6 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
     public bool dialogueIsPlaying;
+    public int lockTyping;
 
     private void Awake()
     {
@@ -29,14 +32,14 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the Scene");
         }
         instance = this;
-    } 
+    }
 
     public static DialogueManager GetInstance()
     {
         return instance;
     }
 
-    private void Start()
+    public void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         dialogueIsPlaying = false;
@@ -60,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         if (!dialogueIsPlaying)
         {
             return;
-        } 
+        }
 
         if (currentStory.currentChoices.Count == 0 && Input.GetKeyDown("space"))
         {
@@ -94,10 +97,20 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             // set text for the current diaglogue line 
-            dialogueText.text = currentStory.Continue();
-            // display choices, if any, for this dialogue line
-            displayChoices();
-            gameManager.incrementLines();
+            //dialogueText.text = currentStory.Continue();
+
+            if (lockTyping == 0)
+            {
+
+                //lockTyping = 1;
+                // This applies the replacement above by using a typwriter function
+                string textToType = currentStory.Continue();
+                // use the string textToType and start tying it to dialogueText (inside the box)
+                StartCoroutine(TypeText(textToType, dialogueText));
+
+                // display choices, if any, for this dialogue line
+                displayChoices();
+            }
         }
         else
         {
@@ -105,6 +118,45 @@ public class DialogueManager : MonoBehaviour
 
         }
     }
+
+    /**
+     * Method to type text by each characher (str), it gets locked until it 
+     * finishes to type in the dialog box(dialogueText) then unlocks for next
+     * textToType
+     * 
+     */
+    private IEnumerator TypeText(string textToType, TextMeshProUGUI dialogueText)
+    {
+
+        dialogueText.text = string.Empty;
+        lockTyping = 1;
+
+        //yield return new WaitForSeconds(1);
+
+        float t = 0;
+        int charIndex = 0;
+
+        while (charIndex < textToType.Length)
+        {
+
+
+            t += Time.deltaTime * typeWriterSpeed;
+            charIndex = Mathf.FloorToInt(t);
+            charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
+
+            dialogueText.text = textToType.Substring(0, charIndex);
+
+            yield return null;
+
+        }
+
+   
+        
+        lockTyping = 0;
+
+        dialogueText.text = textToType;
+    }
+
 
     private void displayChoices()
     {
