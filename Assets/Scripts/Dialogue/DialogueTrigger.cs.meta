@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - visualCue: {instanceID: 0}
-  - inkJSON: {fileID: 4900000, guid: b750273e9d2bbd1438dd8b8772843fa9, type: 3}
+  - inkJSON: {fileID: 4900000, guid: 49924ebc549f5a24eae58336c776624a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
