@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class DialogueManager : MonoBehaviour
 {
     private static DialogueManager instance;
+    private GameManager gameManager;
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -23,8 +24,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        
-
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the Scene");
@@ -39,6 +38,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
@@ -97,6 +97,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = currentStory.Continue();
             // display choices, if any, for this dialogue line
             displayChoices();
+            gameManager.incrementLines();
         }
         else
         {
