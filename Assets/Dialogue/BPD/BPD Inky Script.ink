@@ -51,7 +51,7 @@ Dr. Higashi: Like I said, you seemed like a good student at the beginning of ter
 
 Dr. Higashi: I won’t tolerate this. 
 
-Dmitri pauses for a split second before making a smirk. 
+Narrator: Dmitri pauses for a split second before making a smirk. 
 
 Dmitri: Hehe!!! HAHAHAHA!
 
@@ -77,15 +77,15 @@ Narrator: The cause of this sudden outburst is puzzling, but I have no patience 
     -> daycare_bad()
 
 === curious ===
-Dr Higashi: I wanted to talk to you about the course. For the first few weeks of the term, you attended regularly, and were doing really good work.
+Dr. Higashi: I wanted to talk to you about the course. For the first few weeks of the term, you attended regularly, and were doing really good work.
 
-Dr Higashi: I’ve noticed your absence and that your academic work is failing.  I’m wondering if there is something happening in your life, and if you are doing ok?
+Dr. Higashi: I’ve noticed your absence and that your academic work is failing.  I’m wondering if there is something happening in your life, and if you are doing ok?
 
 Dmitri: I’m great! The problem is with you and your useless class!
 
 Dmitri: I’m too smart for it and have better things to do with my time. See you at convocation!
 
-Dmitri pauses for a split second before making a smirk. 
+Narrator: Dmitri pauses for a split second before making a smirk. 
 
 Dmitri: Hehe!!! HAHAHAHA! 
 
@@ -99,11 +99,11 @@ Narrator: His stifled laughter turned into a riotous roar. He was laughing and l
 
 Narrator: I am shocked by his behavior. Though I am concerned for Dmitri, I have no idea how to handle this. 
 
-Dr Higashi: What is going in with you? Have you been drinking? Are you on drugs? Whatever it is, you need help. 
+Dr. Higashi: What is going in with you? Have you been drinking? Are you on drugs? Whatever it is, you need help. 
 
-Dr Higashi: Because of your strong start in the course, I’m going to give you the benefit of the doubt. I’m feeling generous and I’ll give you a week to come to your senses, apologize, change your behaviour and attitude, start attending class, and actually put in some effort. 
+Dr. Higashi: Because of your strong start in the course, I’m going to give you the benefit of the doubt. I’m feeling generous and I’ll give you a week to come to your senses, apologize, change your behaviour and attitude, start attending class, and actually put in some effort. 
 
-Dr Higashi: You’re not rewriting this paper, though-- the grade stays. 
+Dr. Higashi: You’re not rewriting this paper, though-- the grade stays. 
 
 Narrator: Dmitri pauses again and straightens up, staring directly at me. Then he bursts into tears.
 
@@ -114,11 +114,11 @@ Narrator: He falls to the floor, crying.
         -> somethings_wrong()
 
 === scared ===
-Dr Higashi: I am going to have to ask you to leave my office. You’re freaking me out. 
+Dr. Higashi: I am going to have to ask you to leave my office. You’re freaking me out. 
 
-With a scowl, Dmitri stormed out of the room. I can hear him walking down the hall, yelling that he’s being persecuted for his brilliance. 
+Narrator: With a scowl, Dmitri stormed out of the room. I can hear him walking down the hall, yelling that he’s being persecuted for his brilliance. 
 
-The confrontation left me baffled and confused. What had happened to Dmitri?
+Narrator: The confrontation left me baffled and confused. What had happened to Dmitri?
     -> daycare_bad()
 
 === daycare_bad ===
@@ -146,9 +146,9 @@ Narrator: Eventually, Dmitri got his daughter back into his custody, but was ult
 === somethings_wrong ===
 Narrator: Realizing the severity of the situation, I decide it’s best to remain calm and try and help Dmitri. 
 
-Dr Higashi: Listen, Dmitri. I know that you’re a very smart student. You can still finish the course with a really good mark. 
+Dr. Higashi: Listen, Dmitri. I know that you’re a very smart student. You can still finish the course with a really good mark. 
 
-Dr Higashi: The two of us just need to work together to find the best way for you to complete the course.
+Dr. Higashi: The two of us just need to work together to find the best way for you to complete the course.
 
 Dmitri: As if I need your help! How do you even still have a job?! 
 
@@ -156,7 +156,7 @@ Dmitri’s speech started to become faster and louder. He was becoming harder to
 
 Narrator: I consider for a moment calling campus security, but realize that Dmitri needs help, not just to be dragged off campus. 
 
-Dr Higashi: I think I know someone who can help. I’ll give them a call. 
+Dr. Higashi: I think I know someone who can help. I’ll give them a call. 
 
 Narrator: I pick up my phone and start dialing the number of a mobile crisis unit.  
 
