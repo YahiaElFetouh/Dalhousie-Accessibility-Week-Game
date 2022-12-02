@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
     public Sprite[] backgrounds;
     public int[] switchScenes;
 
-    public int linesRead = 0;
-    public int currentBG = 0;
+    private int linesRead = 0;
+    private int currentBG = 0;
 
     private void Start()
     {
