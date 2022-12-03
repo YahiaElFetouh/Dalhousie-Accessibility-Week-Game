@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class DialogueManager : MonoBehaviour
 {
     private static DialogueManager instance;
+    private GameManager gameManager;
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -26,8 +27,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-
-
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the Scene");
@@ -42,8 +41,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Start()
     {
-        //TypeText("This is some text comming from start", dialogueText);
-
+        gameManager = FindObjectOfType<GameManager>();
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
@@ -99,20 +97,24 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             // set text for the current diaglogue line 
-            //dialogueText.text = currentStory.Continue();
+            if(gameManager) {
+                //dialogueText.text = currentStory.Continue();
+                gameManager.incrementLines();
+            }
 
             if (lockTyping == 0)
             {
-
                 //lockTyping = 1;
                 // This applies the replacement above by using a typwriter function
                 string textToType = currentStory.Continue();
                 // use the string textToType and start tying it to dialogueText (inside the box)
                 StartCoroutine(TypeText(textToType, dialogueText));
-
-                // display choices, if any, for this dialogue line
-                displayChoices();
             }
+
+            // display choices, if any, for this dialogue line
+            displayChoices();
+            
+
         }
         else
         {
