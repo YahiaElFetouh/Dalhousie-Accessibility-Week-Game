@@ -10,10 +10,6 @@ public class CursorSize : MonoBehaviour
     public Texture2D regCursor;
     [SerializeField] Slider cursorSlider;
 
-    void Start(){
-        cursorReg();
-    }
-
     public void changeCursor()
     {
         if(cursorSlider.value == 0){
