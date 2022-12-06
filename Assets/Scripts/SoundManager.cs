@@ -5,23 +5,9 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    private bool muted = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        if(!PlayerPrefs.HasKey("muted"))
-        {
-            PlayerPrefs.SetInt("muted", 0);
-            Load();
-        }
-        else
-        {
-            Load();
-        }
-        AudioListener.pause = muted;
-    }
+    public bool muted;
 
-    // Update is called once per frame
+    // Update 'lever' to invert between muting and unmuting the game's music
     public void OnBottonPress()
     {
         if (muted == false)

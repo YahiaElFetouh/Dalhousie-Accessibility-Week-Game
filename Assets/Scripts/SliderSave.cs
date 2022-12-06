@@ -5,28 +5,28 @@ using UnityEngine.UI;
 
 public class SliderSave : MonoBehaviour
 {
-    private new string name;
-    private UnityEngine.UI.Slider slider;
+    private UnityEngine.UI.Slider slider; //Slider Controller
+    private new string settingsName; // Settings Name in respect to Game Object interaction.
+
 
     // Start is called before the first frame update
     void Start()
     {
-        name = this.gameObject.name;
-        slider = this.gameObject.GetComponent<UnityEngine.UI.Slider>();
-        float savedValue = PlayerPrefs.GetFloat(name);
+        settingsName = this.gameObject.name;
+        slider = this.gameObject.GetComponent<UnityEngine.UI.Slider>(); 
         
-        if (PlayerPrefs.HasKey(name))
+        if (PlayerPrefs.HasKey(settingsName))
         {
-            slider.value = savedValue;
-            Debug.Log($"{name} = {PlayerPrefs.GetFloat(name)}");
+            slider.value = PlayerPrefs.GetFloat(settingsName);
+            Debug.Log($"{settingsName} = {PlayerPrefs.GetFloat(settingsName)}");
         }
     }
 
+    // Based on user input this is updated to reflect new settings configuration into their Player Prefs.
     public void SaveSlider()
     {
-        float sliderValue = slider.value;
-        PlayerPrefs.SetFloat(name, sliderValue);
+        PlayerPrefs.SetFloat(settingsName, slider.value);
         PlayerPrefs.Save();
-        Debug.Log($"{name} has been set to {sliderValue} in PlayerPrefs.");
+        Debug.Log($"{settingsName} has been set to {slider.value} in PlayerPrefs.");
     }
 }

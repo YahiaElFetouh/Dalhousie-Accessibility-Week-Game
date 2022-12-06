@@ -251,6 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 97211368}
+  musicVolumeSettings: {fileID: 357570156}
+  musicToggleSettings: {fileID: 1401423835}
+  DEFAULT_SETTINGS: 1
 --- !u!1 &97211364
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +375,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 97211368}
         m_TargetAssemblyTypeName: CursorSize, Assembly-CSharp
-        m_MethodName: changeCursor
+        m_MethodName: changeCursorSlider
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1063,7 +1067,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.7261963, y: -0.00024414062}
   m_SizeDelta: {x: 19.2738, y: -21.026}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1339,9 +1343,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 286892767}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1528,6 +1532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 0}
+  musicVolumeSettings: {fileID: 0}
+  musicToggleSettings: {fileID: 0}
+  DEFAULT_SETTINGS: 1
 --- !u!1 &410594597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,7 +2321,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4094,6 +4102,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1401423833}
+        m_TargetAssemblyTypeName: ToggleSave, Assembly-CSharp
+        m_MethodName: SaveToggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!114 &1401423835
 MonoBehaviour:
@@ -4107,6 +4127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fffdf88fadec7419ae209eb40b7518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muted: 0
 --- !u!1 &1425344560
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,7 +4143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1425344561
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4437,7 +4458,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5595,8 +5616,8 @@ RectTransform:
   m_Father: {fileID: 1436812882}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.7261963, y: -0.00024414062}
   m_SizeDelta: {x: 19.2738, y: -21.026}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6067,6 +6088,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 0}
+  musicVolumeSettings: {fileID: 0}
+  musicToggleSettings: {fileID: 0}
+  DEFAULT_SETTINGS: 1
 --- !u!1 &2030577193
 GameObject:
   m_ObjectHideFlags: 0
