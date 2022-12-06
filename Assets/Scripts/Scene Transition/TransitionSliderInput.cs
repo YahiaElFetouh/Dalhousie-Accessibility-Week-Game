@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TransitionSliderInput : MonoBehaviour
 {
-    public GameObject transition;
+    public GameObject transition, quoteObject;
     private bool transitionActive;
 
     // Start is called before the first frame update
@@ -26,6 +26,7 @@ public class TransitionSliderInput : MonoBehaviour
             if (transition.GetComponent<MoveSlider>().IsFinishedLerp())
             {
                 transition.GetComponent<MoveSlider>().enabled = false;
+                Instantiate(quoteObject);
                 transitionActive = true;
             }
         }
