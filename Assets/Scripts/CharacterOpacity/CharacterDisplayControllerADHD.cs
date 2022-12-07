@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class CharacterDisplayController : MonoBehaviour
+public class CharacterDisplayControllerADHD : MonoBehaviour
 {
     private GameObject textbox;
     public string currentCharacter;
@@ -32,8 +32,7 @@ public class CharacterDisplayController : MonoBehaviour
         //print(textbox);
         if (textbox != null)
         {
-            Character1.SetActive(true);
-            Character2.SetActive(true);
+            
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
             if (textSplit.Length > 0)
             {
@@ -66,8 +65,9 @@ public class CharacterDisplayController : MonoBehaviour
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
                 previousCharacter = currentCharacter;
+                Character1.SetActive(true);
+                Character2.SetActive(true);
             }
         }
-        
     }
 }
