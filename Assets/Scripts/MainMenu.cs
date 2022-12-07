@@ -30,19 +30,19 @@ public class MainMenu : MonoBehaviour{
    public void LoadADHDScenerio()
    {
       Debug.Log("ADHD story loading");
-      SceneManager.LoadScene("(1) ADHD Story");
+      SceneManager.LoadScene("Story1-ADHD");
    }
 
    public void LoadSubstanceAbuseScenerio()
    {
       Debug.Log("Substance Use story loading");
-      SceneManager.LoadScene("(2) Substance Use Story");
+      SceneManager.LoadScene("Story2-Substance_Abuse");
    }
 
    public void LoadBipolarScenerio()
    {
       Debug.Log("Bi-polar story loading");
-      SceneManager.LoadScene("(3) Bi-polar Story");
+      SceneManager.LoadScene("Story3-BPD");
    }
 
 
