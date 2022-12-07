@@ -5,32 +5,19 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    public bool muted;
+    [SerializeField] Toggle toggler;
 
-    // Update 'lever' to invert between muting and unmuting the game's music
-    public void OnBottonPress()
+    public void musicToggleStatus()
     {
-        if (muted == false)
-        {
-            muted = true;
-            AudioListener.pause = true;
-        }
-        else
-        {
-            muted = false;
-            AudioListener.pause = false;
-        }
+        AudioListener.pause = toggler.isOn;
+        Debug.Log("Muted? " + toggler.isOn);
         Save();
-    }
-
-    private void Load()
-    {
-        muted = PlayerPrefs.GetInt("muted") == 1;
     }
 
     private void Save()
     {
-        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+        PlayerPrefs.SetInt("MuteAudio", toggler.isOn ? 1 : 0);
+        //Debug.Log("Update of Muted? " + toggler.isOn + " | " + toggler.isOn);
+        AudioListener.pause = toggler.isOn;
     }
 }
-

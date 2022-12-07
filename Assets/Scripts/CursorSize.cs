@@ -10,8 +10,8 @@ public class CursorSize : MonoBehaviour
     public Texture2D regCursor;
     [SerializeField] Slider cursorSlider;
 
-    // Changes Cursor Size based on Player Prefs. data:
-    public void changeCursor()
+    // Sets Cursor Size based on Player Prefs. data:
+    public void changeCursorSize()
     {
         if (PlayerPrefs.GetFloat("CursorSize") == 0) {
             cursorReduce();
@@ -25,6 +25,7 @@ public class CursorSize : MonoBehaviour
         else {
             cursorReg();
         }
+        Debug.Log("Cursor Size Set to: " + PlayerPrefs.GetFloat("CursorSize"));
     }
 
     // Changes Cursor Size based on slider input data:

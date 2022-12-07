@@ -7,19 +7,14 @@ public class MusicVolume : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
 
-    private void ChangeVolume()
+    public void ChangeVolume()
     {
         AudioListener.volume = volumeSlider.value;
+        Debug.Log("Volume Set to: '" + volumeSlider.value * 100 + "'%");
         Save();
     }
 
-    //Load the player's saved volume preference
-    public void Load()
-    {
-        volumeSlider.value = PlayerPrefs.GetFloat("AudioVolume");
-    }
-
-    //Save the player's volume preference
+    //Save the player's volume preference to Player Prefs.
     private void Save()
     {
         PlayerPrefs.SetFloat("AudioVolume", volumeSlider.value);

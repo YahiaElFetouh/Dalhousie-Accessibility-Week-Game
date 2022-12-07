@@ -9,34 +9,37 @@ public class MainMenu : MonoBehaviour{
    public MusicVolume musicVolumeSettings;
    public SoundManager musicToggleSettings;
 
-   //Value for deafult settings setup
-   public float DEFAULT_SETTINGS = 1;
+   //Deafult Settings Values:
+   public float DEFAULT_SETTINGS_SLIDER = 1f;
+   public int DEFAULT_SETTINGS_TOGGLE = 0;
 
-   
+   /* Here settings set by player already or by game for new playsers are made */
    public void Start()
    {
       //Cursor Application - Cursor.cs
-      if (!PlayerPrefs.HasKey("CursorSize")) 
+      if(!PlayerPrefs.HasKey("CursorSize")) 
       {
-         PlayerPrefs.SetFloat("CursorSize", DEFAULT_SETTINGS);
+         PlayerPrefs.SetFloat("CursorSize", DEFAULT_SETTINGS_SLIDER); //Regular 1
          PlayerPrefs.Save();
       }
          
       //Music Volume Audio Application - MusicVolume.cs
       if(!PlayerPrefs.HasKey("AudioVolume"))
       {
-         PlayerPrefs.SetFloat("AudioVolume", DEFAULT_SETTINGS);
+         PlayerPrefs.SetFloat("AudioVolume", DEFAULT_SETTINGS_SLIDER);
          PlayerPrefs.Save();
       }
 
       //Music Volume Toggle Application - SoundManager.cs
-      if(!PlayerPrefs.HasKey("muted")) 
+      if(!PlayerPrefs.HasKey("MuteAudio")) 
       {
-         PlayerPrefs.SetInt("muted", (int)DEFAULT_SETTINGS);
-         AudioListener.pause = musicToggleSettings.muted;
+         PlayerPrefs.SetInt("MuteAudio", (int) DEFAULT_SETTINGS_TOGGLE);
+         PlayerPrefs.Save();
       }
 
-      cursorSettings.changeCursor();
+      cursorSettings.changeCursorSize();
+      musicVolumeSettings.ChangeVolume();
+      musicToggleSettings.musicToggleStatus();
     }
 
 
