@@ -3,13 +3,9 @@ guid: 443da008a5388204da61da0cc77956fe
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-<<<<<<< HEAD
   defaultReferences:
   - visualCue: {instanceID: 0}
   - inkJSON: {fileID: 4900000, guid: b750273e9d2bbd1438dd8b8772843fa9, type: 3}
-=======
-  defaultReferences: []
->>>>>>> 7ce5fd72cfe1264dfe0fce3d9ef8195204234fa4
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
