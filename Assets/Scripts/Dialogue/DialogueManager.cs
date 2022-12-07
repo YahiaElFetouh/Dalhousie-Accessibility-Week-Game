@@ -97,17 +97,15 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
 
-            if (lockTyping == 0)
+            if (lockTyping == 0 && gameManager)
             {
                 //lockTyping = 1;
                 // This applies the replacement above by using a typwriter function
                 string textToType = currentStory.Continue();
                 // use the string textToType and start tying it to dialogueText (inside the box)
                 StartCoroutine(TypeText(textToType, dialogueText));
-            }
-
-            if (gameManager){
-                gameManager.incrementLines();
+                
+                gameManager.incrementLines(); //Updated to next background image
             }
 
             // display choices, if any, for this dialogue line
