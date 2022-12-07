@@ -59,7 +59,6 @@ Arwah: Thank you! I’m glad you’ve been able to focus on giving me specific d
 
 = oneWeekLater
 One week later..
-Rowan: Hi Arwah, can you please come to my office, I need to have a chat with you. 
 Rowan: It has been wonderful to have you around in the office. But it has been decided that we will not be moving extending your contract...
 .. past the probation period. I wish you the best of luck with your future endeavours. 
 Arwah: What? I don’t understand. I thought I was doing okay...
