@@ -9,38 +9,15 @@ public class MainMenu : MonoBehaviour{
    public MusicVolume musicVolumeSettings;
    public SoundManager musicToggleSettings;
 
-   //Deafult Settings Values:
-   public float DEFAULT_SETTINGS_SLIDER = 1f;
-   public int DEFAULT_SETTINGS_TOGGLE = 0;
 
-   /* Here settings set by player already or by game for new playsers are made */
+   // Start is called before the first frame update
    public void Start()
    {
-      //Cursor Application - Cursor.cs
-      if(!PlayerPrefs.HasKey("CursorSize")) 
-      {
-         PlayerPrefs.SetFloat("CursorSize", DEFAULT_SETTINGS_SLIDER); //Regular 1
-         PlayerPrefs.Save();
-      }
-         
-      //Music Volume Audio Application - MusicVolume.cs
-      if(!PlayerPrefs.HasKey("AudioVolume"))
-      {
-         PlayerPrefs.SetFloat("AudioVolume", DEFAULT_SETTINGS_SLIDER);
-         PlayerPrefs.Save();
-      }
-
-      //Music Volume Toggle Application - SoundManager.cs
-      if(!PlayerPrefs.HasKey("MuteAudio")) 
-      {
-         PlayerPrefs.SetInt("MuteAudio", (int) DEFAULT_SETTINGS_TOGGLE);
-         PlayerPrefs.Save();
-      }
-
-      cursorSettings.changeCursorSize();
-      musicVolumeSettings.ChangeVolume();
+      //Updating Player Prefs.
+      cursorSettings.cursorSizeStatus();
+      musicVolumeSettings.audioVolumeStatus();
       musicToggleSettings.musicToggleStatus();
-    }
+   }
 
 
    /* Play the game from beginning to end */
@@ -48,7 +25,6 @@ public class MainMenu : MonoBehaviour{
       Debug.Log("PLAY!");
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
-
 
    /* Play the game from selection screen */
    public void LoadADHDScenerio()

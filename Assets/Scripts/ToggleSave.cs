@@ -17,7 +17,7 @@ public class ToggleSave : MonoBehaviour
         
         if (PlayerPrefs.HasKey(name))
         {
-            //Toggle Config.: 1 == 1 => True (Toggle ON[TRUE]) ~OR~ 0 == 1 => False (Toggle OFF[FALSE])
+            //Toggle Config.: 1 == 1 => True (Toggle ON[ticked]) ~OR~ 0 == 1 => False (Toggle OFF[unticked])
             toggle.isOn = savedValue == 1 ? true : false;
             Debug.Log($"{name} = {PlayerPrefs.GetInt(name)}");
         }

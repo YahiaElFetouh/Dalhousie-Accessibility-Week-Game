@@ -10,21 +10,31 @@ public class CursorSize : MonoBehaviour
     public Texture2D regCursor;
     [SerializeField] Slider cursorSlider;
 
-    // Sets Cursor Size based on Player Prefs. data:
-    public void changeCursorSize()
+    public float DEFAULT_SETTINGS_CURSOR_SIZE = 1;
+
+
+    // Sets Cursor Size based on Player Prefs. data - SliderSave.cs
+    public void cursorSizeStatus()
     {
+        if(!PlayerPrefs.HasKey("CursorSize")) 
+        {
+            PlayerPrefs.SetFloat("CursorSize", DEFAULT_SETTINGS_CURSOR_SIZE); //Regular 1
+            PlayerPrefs.Save();
+        }
+        
         if (PlayerPrefs.GetFloat("CursorSize") == 0) {
             cursorReduce();
         }
         else if (PlayerPrefs.GetFloat("CursorSize") == 1) {
             cursorReg();
         }
-        else if (PlayerPrefs.GetFloat("CursorSize") == 0) {
+        else if (PlayerPrefs.GetFloat("CursorSize") == 2) {
             cursorEnlarge();
         }
         else {
             cursorReg();
         }
+
         Debug.Log("Cursor Size Set to: " + PlayerPrefs.GetFloat("CursorSize"));
     }
 

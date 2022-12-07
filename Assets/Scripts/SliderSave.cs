@@ -18,7 +18,7 @@ public class SliderSave : MonoBehaviour
         if (PlayerPrefs.HasKey(settingsName))
         {
             slider.value = PlayerPrefs.GetFloat(settingsName);
-            Debug.Log($"{settingsName} = {PlayerPrefs.GetFloat(settingsName)}");
+            //Debug.Log($"{settingsName} = {PlayerPrefs.GetFloat(settingsName)}");
         }
     }
 
@@ -27,6 +27,6 @@ public class SliderSave : MonoBehaviour
     {
         PlayerPrefs.SetFloat(settingsName, slider.value);
         PlayerPrefs.Save();
-        Debug.Log($"{settingsName} has been set to {slider.value} in PlayerPrefs.");
+        //Debug.Log($"{settingsName} has been set to {slider.value} in PlayerPrefs.");
     }
 }

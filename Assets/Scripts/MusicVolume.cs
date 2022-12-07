@@ -6,17 +6,25 @@ using UnityEngine.UI;
 public class MusicVolume : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
+    public float DEFAULT_SETTINGS_AUDIO_VOLUME = 1;
 
-    public void ChangeVolume()
+    
+    public void audioVolumeStatus()
     {
-        AudioListener.volume = volumeSlider.value;
-        Debug.Log("Volume Set to: '" + volumeSlider.value * 100 + "'%");
-        Save();
+        if(!PlayerPrefs.HasKey("AudioVolume"))
+        {
+            PlayerPrefs.SetFloat("AudioVolume", DEFAULT_SETTINGS_AUDIO_VOLUME);
+            PlayerPrefs.Save();
+        }
+        
+        Debug.Log("Volume Set to: '" + PlayerPrefs.GetFloat("AudioVolume") * 100 + "'%");
+        AudioListener.volume = PlayerPrefs.GetFloat("AudioVolume");
     }
 
-    //Save the player's volume preference to Player Prefs.
-    private void Save()
+    //Music Volume Audio Application - Slider; SliderSave.cs
+    public void ChangeVolume()
     {
-        PlayerPrefs.SetFloat("AudioVolume", volumeSlider.value);
+        //Debug.Log("Volume Slider: " + volumeSlider.value);
+        AudioListener.volume = volumeSlider.value;
     }
 }
