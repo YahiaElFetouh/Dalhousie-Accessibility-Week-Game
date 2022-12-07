@@ -14,8 +14,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        playerInRange = false;
-        visualCue.SetActive(false);
+        playerInRange = true; //OG: Was originally set to false.
+        visualCue.SetActive(true);
 
     }
 
@@ -41,6 +41,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collider)
     {
         //Debug.Log("Trigger");
@@ -69,5 +70,6 @@ public class DialogueTrigger : MonoBehaviour
 
         //playerInRange = false;
     }
+    */
 
 }
