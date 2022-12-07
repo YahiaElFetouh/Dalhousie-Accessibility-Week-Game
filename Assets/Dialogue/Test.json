@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"inkVersion":20,"root":[[{"->":"main"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"main":[["^Choose a number?","\n","ev","str","^One!","/str","/ev",{"*":".^.c-0","flg":4},"ev","str","^Two!","/str","/ev",{"*":".^.c-1","flg":4},"ev","str","^Three!","/str","/ev",{"*":".^.c-2","flg":4},{"c-0":["\n","ev","str","^One!","/str","/ev",{"->":"chosen"},{"#f":5}],"c-1":["\n","ev","str","^Two","/str","/ev",{"->":"chosen"},{"#f":5}],"c-2":["\n","ev","str","^Three!","/str","/ev",{"->":"chosen"},{"#f":5}]}],{"#f":1}],"chosen":[{"temp=":"output"},"^You chose ","ev",{"VAR?":"output"},"out","/ev","^!","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}
+=======
+﻿{"inkVersion":20,"root":[["^This is a test","\n","^Here is another Line","\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+>>>>>>> 7ce5fd72cfe1264dfe0fce3d9ef8195204234fa4
