@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/(1) ADHD Story.unity
     guid: 16905b976b15b7c41846e03fe5d063f5
   - enabled: 1
-    path: Assets/Scenes/(2) Substance (Ab)Use Story.unity
+    path: Assets/Scenes/(2) Substance Use Story.unity
     guid: 9c79e3d32d6c2964b876ab068a3b2098
   - enabled: 1
     path: Assets/Scenes/(3) Bi-polar Story.unity
