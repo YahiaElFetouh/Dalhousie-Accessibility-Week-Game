@@ -96,11 +96,6 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            // set text for the current diaglogue line 
-            if(gameManager) {
-                //dialogueText.text = currentStory.Continue();
-                gameManager.incrementLines();
-            }
 
             if (lockTyping == 0)
             {
@@ -109,6 +104,10 @@ public class DialogueManager : MonoBehaviour
                 string textToType = currentStory.Continue();
                 // use the string textToType and start tying it to dialogueText (inside the box)
                 StartCoroutine(TypeText(textToType, dialogueText));
+            }
+
+            if (gameManager){
+                gameManager.incrementLines();
             }
 
             // display choices, if any, for this dialogue line
