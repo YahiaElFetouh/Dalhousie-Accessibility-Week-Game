@@ -27,14 +27,15 @@ public class GameManager : MonoBehaviour
     public void incrementLines()
     {
         linesRead++;
-        if( switchScenes.Length >= currentBG && linesRead == switchScenes[currentBG])
-        {
-            nextBackground();
+        if (switchScenes.Length > currentBG) {
+            if(linesRead == switchScenes[currentBG]){
+                nextBackground();
+            }
         }
     }
     public void nextBackground()
     {
-        currentBG++;
         original.sprite = backgrounds[currentBG];
+        currentBG++;
     }
 }
