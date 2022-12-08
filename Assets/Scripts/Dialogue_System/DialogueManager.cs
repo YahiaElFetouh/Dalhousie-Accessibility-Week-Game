@@ -21,6 +21,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    [Header("Dialogue Navigation Info")]
+    [SerializeField] public GameObject continueDialogueCue;
+    private int levelOne_Guide = 0;
+
     private Story currentStory;
     public bool dialogueIsPlaying;
     public int lockTyping;
@@ -31,6 +35,7 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the Scene");
         }
+        continueDialogueCue.SetActive(false);
         instance = this;
     }
 
@@ -79,8 +84,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueIsPlaying = true;
 
-        dialoguePanel.SetActive(true);
-
+        continueDialogueCue.SetActive(true);
+        Debug.Log("level status [0?]: " + levelOne_Guide);
         ContinueStory();
     }
 
@@ -96,22 +101,30 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
+            if (levelOne_Guide == 0) {
+                levelOne_Guide = 1;
+                Debug.Log("level status [1?]: " + levelOne_Guide);
+            } 
+            else {
+                continueDialogueCue.SetActive(false);
+                Debug.Log("Controls UI closed");
 
-            if (lockTyping == 0 && gameManager)
-            {
-                //lockTyping = 1;
-                // This applies the replacement above by using a typwriter function
-                string textToType = currentStory.Continue();
-                // use the string textToType and start tying it to dialogueText (inside the box)
-                StartCoroutine(TypeText(textToType, dialogueText));
-                
-                gameManager.incrementLines(); //Updated to next background image
+                dialoguePanel.SetActive(true);
+
+                if (lockTyping == 0 && gameManager)
+                {
+                    //lockTyping = 1;
+                    // This applies the replacement above by using a typwriter function
+                    string textToType = currentStory.Continue();
+                    // use the string textToType and start tying it to dialogueText (inside the box)
+                    StartCoroutine(TypeText(textToType, dialogueText));
+                    
+                    gameManager.incrementLines(); //Updated to next background image
+                }
+
+                // display choices, if any, for this dialogue line
+                displayChoices();
             }
-
-            // display choices, if any, for this dialogue line
-            displayChoices();
-            
-
         }
         else
         {

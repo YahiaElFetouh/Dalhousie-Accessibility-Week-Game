@@ -1776,29 +1776,29 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Team Directors :
+  m_text: '<u> Team Directors: </u>
 
     - Tom Campbell (Development Director)
 
-    - Joel
-    Kuruvilla (Technical Director)
-
-
-    Development Team :
-
-    - Joseph Burton
-
     -
-    Ayah Abaza
+    Joel Kuruvilla (Technical Director)
+
+
+    <u> Development Team: </u>
+
+    - Joseph
+    Burton
+
+    - Ayah Abaza
 
     - Andrew Cole
 
     - Ram Tejesh Reddy Maddi
 
-    - Hesham Elokdah
-
     -
-    Joseph Krajewski
+    Hesham Elokdah
+
+    - Joseph Krajewski
 
     - Benny Mugisha
 
@@ -5620,33 +5620,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Project Corp. Exectutives:
-
-
-    CEO:
-
-    Robert Hawkey
-
-
-    CTO:
-
-    Shaik
-    Asaduddin
-
-
-    COO:
-
-    Sigma Jahan
-
-
-    On behalf of:
-
-    Centre for Learning
-    & Teaching
-
-    - Tereigh Ewert
-
-    & the (dis)Ability Caucus'
+  m_text: "<u> Project Corp. Exectutives: </u>\n<b> CEO </b>: \nRobert Hawkey\n\n<b>
+    CTO </b>: \nShaik Asaduddin\n\n<b> COO: </b> \nSigma Jahan\n\n<u> On behalf Of:
+    </u>\nCentre for Learning & Teaching\n- Tereigh Ewert\n& the (dis)Ability Caucus"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

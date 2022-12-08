@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [Header("Visual Cue")]
+    [Header("Visual Dialogue Cue Info")]
     [SerializeField] private GameObject dialogueCue;
 
     [Header("Ink JSON")]
@@ -29,11 +29,12 @@ public class DialogueTrigger : MonoBehaviour
             //Debug.Log(inkJSON.text);
 
             if (Input.GetKeyDown("i"))
-            {     
-                //Debug.Log(inkJSON.text);
+            {
                 dialogueCue.SetActive(false);
+                
                 dialogueActive = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+
             } else {
                 return;
             }
