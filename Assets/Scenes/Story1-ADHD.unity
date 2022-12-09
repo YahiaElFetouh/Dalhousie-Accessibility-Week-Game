@@ -157,7 +157,6 @@ MonoBehaviour:
   Character1: {fileID: 833005309}
   Character2: {fileID: 1230239200}
   Character3: {fileID: 324324517}
-  Character4: {fileID: 759753503}
 --- !u!4 &52445484
 Transform:
   m_ObjectHideFlags: 0
