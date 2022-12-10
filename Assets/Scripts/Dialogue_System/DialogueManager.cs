@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
@@ -93,6 +94,21 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+
+        if(dialogueIsPlaying == false) {
+            if (SceneManager.GetActiveScene().name == "Story1-ADHD") {
+                SceneManager.LoadScene("Story2-Substance_Abuse");
+            }
+            else if (SceneManager.GetActiveScene().name == "Story2-Substance_Abuse") {
+                SceneManager.LoadScene("Story3-BPD");
+            }
+            else if (SceneManager.GetActiveScene().name == "Story3-BPD") {
+                SceneManager.LoadScene("Credits_Page_End");
+            } else {
+                SceneManager.LoadScene("MainMenu");
+            }
+
+        }
         dialogueText.text = "";
     }
 
