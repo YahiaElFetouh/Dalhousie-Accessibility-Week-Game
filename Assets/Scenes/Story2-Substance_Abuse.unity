@@ -1496,11 +1496,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   original: {fileID: 980550411}
   backgrounds:
-  - {fileID: 21300000, guid: ec2cb81850d46eb4bbb568ec86cb4448, type: 3}
-  - {fileID: 21300000, guid: c2cc2e041f6760041898febcdd7fdb38, type: 3}
-  - {fileID: 21300000, guid: 3eac3e5029d67af4387b771097cbd4e5, type: 3}
-  - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
-  switchScenes: 040000000b0000001600000021000000
+  - {fileID: 21300000, guid: 309433e344b68364fa1ece5f89002ca9, type: 3}
+  - {fileID: 21300000, guid: 0d3aebe24a125d5498cabbf3bf29cd3d, type: 3}
+  - {fileID: 21300000, guid: b55e4795e431ee042af9f8514e922d65, type: 3}
+  - {fileID: 21300000, guid: 0d3aebe24a125d5498cabbf3bf29cd3d, type: 3}
+  switchScenes: 0a0000002a0000003200000036000000
 --- !u!4 &927173798
 Transform:
   m_ObjectHideFlags: 0
@@ -2297,6 +2297,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1280405206481119119, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0d3aebe24a125d5498cabbf3bf29cd3d, type: 3}
     - target: {fileID: 8470925647991514674, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
       propertyPath: m_Name
       value: BackgroundComponent (1)
