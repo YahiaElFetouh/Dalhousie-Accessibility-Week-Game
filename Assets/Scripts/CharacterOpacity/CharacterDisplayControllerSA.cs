@@ -15,7 +15,7 @@ public class CharacterDisplayControllerSA : MonoBehaviour
 
     public GameObject Character1;
     public GameObject Character2;
-    public GameObject Character3;
+    // public GameObject Character3;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class CharacterDisplayControllerSA : MonoBehaviour
         previousCharacter = "Nobody";
         Character1.SetActive(false);
         Character2.SetActive(false);
-        Character3.SetActive(false);
+        // Character3.SetActive(false);
         
     }
 
@@ -37,8 +37,9 @@ public class CharacterDisplayControllerSA : MonoBehaviour
         {
             
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
-            print(textSplit[0]);
-            if (textSplit.Length > 0)
+            // print(textSplit[0]);
+
+            if (textSplit.Length >= 0)
             {
                 if (textSplit[0] == "VP" || textSplit[0] == "Allie")
                 {
@@ -60,8 +61,8 @@ public class CharacterDisplayControllerSA : MonoBehaviour
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character2.transform.localScale = new Vector3(3,3,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    Character3.transform.localScale = new Vector3(3,3,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    // Character3.transform.localScale = new Vector3(3,3,0);
+                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
                 else if (currentCharacter == "VP")
                 {
@@ -69,8 +70,8 @@ public class CharacterDisplayControllerSA : MonoBehaviour
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                     Character2.transform.localScale = new Vector3(5,5,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                    Character3.transform.localScale = new Vector3(3,3,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    // Character3.transform.localScale = new Vector3(3,3,0);
+                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
                 else if (currentCharacter == "Allie")
                 {
@@ -78,26 +79,26 @@ public class CharacterDisplayControllerSA : MonoBehaviour
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                     Character2.transform.localScale = new Vector3(3,3,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    Character3.transform.localScale = new Vector3(5,5,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    // Character3.transform.localScale = new Vector3(5,5,0);
+                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                 }
                 
                 previousCharacter = currentCharacter;
                 Character1.SetActive(true);
                 Character2.SetActive(true);
-                Character3.SetActive(true);
+                // Character3.SetActive(true);
             }
-            else if (textbox.GetComponent<TMP_Text>().text == "I wake")
+            else
             {
                 Character1.SetActive(true);
                 Character2.SetActive(true);
-                Character3.SetActive(true);
-                Character1.transform.localScale = new Vector3(5,5,0);
+                // Character3.SetActive(true);
+                // Character1.transform.localScale = new Vector3(5,5,0);
                 Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                Character2.transform.localScale = new Vector3(3,3,0);
-                Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                Character3.transform.localScale = new Vector3(3,3,0);
-                Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                // Character2.transform.localScale = new Vector3(3,3,0);
+                // Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                // Character3.transform.localScale = new Vector3(3,3,0);
+                // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
             }
         }
 
