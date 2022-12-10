@@ -5,15 +5,15 @@
 
 // Background starts in Allie's room
 
-I wake up to the deafening sound of my alarm clock.
-After how tough last night was, I can’t even fathom how I’m going to make it to class today.
-Remembering that I have a test today, I begrudgingly get out of bed.
-As I open my closet door, I accidentally bump my arm on my nightstand. The pain causes me to inhale sharply.
-The dried gouges on my arm still sting from the night before. There is no way they could be hidden under a shirt.
-I guess I will have to wear my jacket to class today.
-I have been trying to control my opioid use for a number of years to no avail.
-Running out of options has led me to pain. Cutting is my only escape.
-The numb feeling that takes over my body is preferable to the pain I would feel otherwise. 
+Allie: I wake up to the deafening sound of my alarm clock.
+...After how tough last night was, I can’t even fathom how I’m going to make it to class today.
+...Remembering that I have a test today, I begrudgingly get out of bed.
+...As I open my closet door, I accidentally bump my arm on my nightstand. The pain causes me to inhale sharply.
+...The dried gouges on my arm still sting from the night before. There is no way they could be hidden under a shirt.
+..I guess I will have to wear my jacket to class today.
+...I have been trying to control my opioid use for a number of years to no avail.
+...Running out of options has led me to pain. Cutting is my only escape.
+...The numb feeling that takes over my body is preferable to the pain I would feel otherwise. 
     -> schoolHallway
 
 = schoolHallway
@@ -22,13 +22,13 @@ The numb feeling that takes over my body is preferable to the pain I would feel 
 
 Later that day...
 
-I had made it to school on the bus without anyone noticing the scars.
-But that was the easy part. Everyone on the bus wears their coat.
-I walk briskly down the hall, hoping to get to class as quickly as possible without drawing attention to myself.
-I need to keep moving to avoid being marked as tardy. Nothing draws more attention to a person than walking into class late.
-As I turn the corner of the second floor, I find myself face to face with one of the school’s vice principals.
-My heart sinks in my chest. I have grown to distrust the school administration, and I’ve got the feeling that they don’t trust me either.
-I try to sneak by him, but my attempt was futile.
+Allie: I had made it to school on the bus without anyone noticing the scars.
+...But that was the easy part. Everyone on the bus wears their coat.
+...I walk briskly down the hall, hoping to get to class as quickly as possible without drawing attention to myself.
+...I need to keep moving to avoid being marked as tardy. Nothing draws more attention to a person than walking into class late.
+...As I turn the corner of the second floor, I find myself face to face with one of the school’s vice principals.
+...My heart sinks in my chest. I have grown to distrust the school administration, and I’ve got the feeling that they don’t trust me either.
+...I try to sneak by him, but my attempt was futile.
 VP: Stop right there, young lady!
 My heels screeched on the hallway floor.
 VP: Where are you headed in such a hurry? 

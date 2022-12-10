@@ -132,8 +132,9 @@ public class DialogueManager : MonoBehaviour
                     //lockTyping = 1;
                     // This applies the replacement above by using a typwriter function
                     string textToType = currentStory.Continue();
+                    dialogueText.text = textToType;
                     // use the string textToType and start tying it to dialogueText (inside the box)
-                    StartCoroutine(TypeText(textToType, dialogueText));
+                    //StartCoroutine(TypeText(textToType, dialogueText));
                     
                     gameManager.incrementLines(); //Updated to next background image
                 }
