@@ -35,11 +35,10 @@ public class CharacterDisplayControllerSA : MonoBehaviour
         //print(textbox);
         if (textbox != null)
         {
-            
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
             // print(textSplit[0]);
 
-            if (textSplit.Length >= 0)
+            if (textSplit.Length > 0)
             {
                 if (textSplit[0] == "VP" || textSplit[0] == "Allie")
                 {
@@ -50,8 +49,6 @@ public class CharacterDisplayControllerSA : MonoBehaviour
                     currentCharacter = "Nobody";
                 }
             }
-
-            
             
             if (previousCharacter != currentCharacter)
             {
@@ -90,6 +87,8 @@ public class CharacterDisplayControllerSA : MonoBehaviour
             }
             else
             {
+                Character1.SetActive(true); //Allie is 1st to speak
+                Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                 /**
                 Character1.SetActive(true);
                 Character2.SetActive(true);

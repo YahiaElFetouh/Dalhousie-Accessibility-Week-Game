@@ -53,12 +53,12 @@ After a short pause, the vice principal’s expression changes. His next questio
 VP: Is there a reason why you feel uncomfortable taking off your coat before class?
 VP: It is okay to tell me.
 For a second I consider it, but quickly come to my senses.
-If he sees the cuts, what if he calls the police? What if he finds out about my opioid use?
-I worry that I’d be suspended. I’d be judged. People would see me as a failure.
-I cannot have him telling my family. This is my burden to bear.
-I sleeplessly come up with a lie.
+....If he sees the cuts, what if he calls the police? What if he finds out about my opioid use?
+....I worry that I’d be suspended. I’d be judged. People would see me as a failure.
+....I cannot have him telling my family. This is my burden to bear.
+....I sleeplessly come up with a lie.
 Allie: The air conditioning makes the classroom a bit chilly, and my sweaters are still packed up for the summer.
-I could tell from his expression that he doesn’t buy it, but he still seems to want to help. After a long sigh, I decide to give him something closer to the truth.
+....I could tell from his expression that he doesn’t buy it, but he still seems to want to help. After a long sigh, I decide to give him something closer to the truth.
 Allie: I have not been doing well emotionally. I need the comfort of my coat.
 VP: If that’s the case, I’m not going to pressure you to give me details.
 VP: But I encourage you to have a chat with the guidance counsellor.
