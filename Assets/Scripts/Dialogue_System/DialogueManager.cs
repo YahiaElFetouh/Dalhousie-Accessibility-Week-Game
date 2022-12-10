@@ -78,10 +78,10 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (currentStory.currentChoices.Count == 0 && Input.GetKeyDown("space"))
+        if (currentStory.currentChoices.Count == 0 && (Input.GetKeyDown("space") || (Input.GetButtonDown("Fire1"))))
         {
             ContinueStory();
-            
+            //Debug.Log("CLICK");
         }
 
     }
@@ -111,21 +111,22 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
 
         if(dialogueIsPlaying == false) {
-            if (SceneManager.GetActiveScene().name == "Story1-ADHD") {
-                SceneManager.LoadScene("Story2-Substance_Abuse");
-            }
-            else if (SceneManager.GetActiveScene().name == "Story2-Substance_Abuse") {
-                SceneManager.LoadScene("Story3-BPD");
-            }
-            else if (SceneManager.GetActiveScene().name == "Story3-BPD") {
-                SceneManager.LoadScene("Credits_Page_End");
-            }
-            else if (SceneManager.GetActiveScene().name == "Story2-#1") {
-                SceneManager.LoadScene("Credits_Page_End");
-            } 
-            else {
-                SceneManager.LoadScene("MainMenu");
-            }
+            // if (SceneManager.GetActiveScene().name == "Story1-ADHD") {
+            //     SceneManager.LoadScene("Story2-Substance_Abuse");
+            // }
+            // else if (SceneManager.GetActiveScene().name == "Story2-Substance_Abuse") {
+            //     SceneManager.LoadScene("Story3-BPD");
+            // }
+            // else if (SceneManager.GetActiveScene().name == "Story3-BPD") {
+            //     SceneManager.LoadScene("Credits_Page_End");
+            // }
+            // else if (SceneManager.GetActiveScene().name == "Story2-#1") {
+            //     SceneManager.LoadScene("Credits_Page_End");
+            // } 
+            // else {
+            //     SceneManager.LoadScene("MainMenu");
+            // }
+            SceneManager.LoadScene("Credits_Page_End");
 
         }
         dialogueText.text = "";
@@ -154,7 +155,7 @@ public class DialogueManager : MonoBehaviour
                     dialogueText.text = textToType;
                     Debug.Log(textToType);
                     // use the string textToType and start tying it to dialogueText (inside the box)
-                    //StartCoroutine(TypeText(textToType, dialogueText));
+                    StartCoroutine(TypeText(textToType, dialogueText));
                     
                     gameManager.incrementLines(); //Updated to next background image
                 }
@@ -251,7 +252,8 @@ public class DialogueManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
-        if (choiceIndex == 0) {
+        
+        if (SceneManager.GetActiveScene().name == "Story2-Substance_Abuse" && choiceIndex == 0) {
             SceneManager.LoadScene("Story2-#1");
         }
     }

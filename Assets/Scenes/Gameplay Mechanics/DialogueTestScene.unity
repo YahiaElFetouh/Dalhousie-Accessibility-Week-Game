@@ -843,6 +843,7 @@ MonoBehaviour:
   - {fileID: 471590590}
   - {fileID: 1887769634}
   - {fileID: 1264826616}
+  continueDialogueCue: {fileID: 1778334986}
   dialogueIsPlaying: 0
   lockTyping: 0
 --- !u!1 &1264826616
@@ -1022,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443da008a5388204da61da0cc77956fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 334177515}
+  dialogueCue: {fileID: 1294467543}
   inkJSON: {fileID: 4900000, guid: 49924ebc549f5a24eae58336c776624a, type: 3}
 --- !u!61 &1294467546
 BoxCollider2D:
