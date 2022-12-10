@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -19,6 +20,13 @@ public class DialogueTrigger : MonoBehaviour
         dialogueCue.SetActive(true);
 
         dialogueActive = false;
+
+        if (SceneManager.GetActiveScene().name == "Story2-#1") {
+            dialogueCue.SetActive(false);
+            dialogueActive = true;
+
+            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+        }
     }
 
     private void Update()
