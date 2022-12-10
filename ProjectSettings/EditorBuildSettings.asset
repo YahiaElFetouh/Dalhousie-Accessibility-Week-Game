@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story2-Substance_Abuse.unity
     guid: 9c79e3d32d6c2964b876ab068a3b2098
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Story3-BPD.unity
     guid: d2f1d1e269db40a4299e300f82f57f4a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits_Page_End.unity
     guid: 405202bd346bdfd47af678caa8ed53a2
+  - enabled: 1
+    path: Assets/Scenes/Story2-#1.unity
+    guid: 28a1c62d10fd7fd469408cc2902eded8
   m_configObjects: {}

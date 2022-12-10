@@ -61,6 +61,12 @@ public class DialogueManager : MonoBehaviour
             index++;
         }
 
+        if (SceneManager.GetActiveScene().name == "Story2-#1") {
+            Debug.Log("BYPASS ACTIVATED");
+            dialogueIsPlaying = true;
+            ContinueStory();
+        }
+
 
     }
 
@@ -68,12 +74,14 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying)
         {
+            //Debug.Log(currentStory.currentChoices.Count);
             return;
         }
 
         if (currentStory.currentChoices.Count == 0 && Input.GetKeyDown("space"))
         {
             ContinueStory();
+            
         }
 
     }
@@ -82,11 +90,18 @@ public class DialogueManager : MonoBehaviour
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
+        Debug.Log("Story: " + inkJSON.text);
 
         dialogueIsPlaying = true;
 
         continueDialogueCue.SetActive(true);
         Debug.Log("level status [0?]: " + levelOne_Guide);
+
+        if (SceneManager.GetActiveScene().name == "Story2-#1") {
+            continueDialogueCue.SetActive(false);
+            levelOne_Guide = 1;
+        }
+
         ContinueStory();
     }
 
@@ -104,7 +119,11 @@ public class DialogueManager : MonoBehaviour
             }
             else if (SceneManager.GetActiveScene().name == "Story3-BPD") {
                 SceneManager.LoadScene("Credits_Page_End");
-            } else {
+            }
+            else if (SceneManager.GetActiveScene().name == "Story2-#1") {
+                SceneManager.LoadScene("Credits_Page_End");
+            } 
+            else {
                 SceneManager.LoadScene("MainMenu");
             }
 
@@ -132,8 +151,10 @@ public class DialogueManager : MonoBehaviour
                     //lockTyping = 1;
                     // This applies the replacement above by using a typwriter function
                     string textToType = currentStory.Continue();
+                    dialogueText.text = textToType;
+                    Debug.Log(textToType);
                     // use the string textToType and start tying it to dialogueText (inside the box)
-                    StartCoroutine(TypeText(textToType, dialogueText));
+                    //StartCoroutine(TypeText(textToType, dialogueText));
                     
                     gameManager.incrementLines(); //Updated to next background image
                 }
@@ -230,5 +251,8 @@ public class DialogueManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+        if (choiceIndex == 0) {
+            SceneManager.LoadScene("Story2-#1");
+        }
     }
 }
