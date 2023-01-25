@@ -47,6 +47,9 @@ public class DialogueManager : MonoBehaviour
 
     public void Start()
     {
+        
+
+
         gameManager = FindObjectOfType<GameManager>();
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
@@ -60,7 +63,7 @@ public class DialogueManager : MonoBehaviour
             choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
         }
-
+//
         if (SceneManager.GetActiveScene().name == "Story2-#1") {
             Debug.Log("BYPASS ACTIVATED");
             dialogueIsPlaying = true;
