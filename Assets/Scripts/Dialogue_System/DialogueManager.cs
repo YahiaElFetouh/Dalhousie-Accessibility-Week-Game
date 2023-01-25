@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
 
 
     }
-
+//
     private void Update()
     {
         if (!dialogueIsPlaying)
