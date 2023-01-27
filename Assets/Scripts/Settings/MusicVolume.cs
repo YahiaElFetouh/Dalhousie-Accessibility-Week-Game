@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class MusicVolume : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
-    public float DEFAULT_SETTINGS_AUDIO_VOLUME = 1;
+
+
+
+    public float DEFAULT_SETTINGS_AUDIO_VOLUME = 0.5f;
 
     
     public void audioVolumeStatus()
