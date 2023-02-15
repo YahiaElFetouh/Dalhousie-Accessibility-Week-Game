@@ -42,7 +42,7 @@ public class MainMenu : MonoBehaviour{
    public void LoadBipolarScenerio()
    {
       Debug.Log("Bi-polar story loading");
-      SceneManager.LoadScene("Story3-BPD");
+      SceneManager.LoadScene("TestStory");
    }
 
 
