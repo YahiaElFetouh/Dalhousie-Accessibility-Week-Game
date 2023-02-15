@@ -9,7 +9,7 @@ public class MusicVolume : MonoBehaviour
 
 
 
-    public float DEFAULT_SETTINGS_AUDIO_VOLUME = 0.5f;
+    public float DEFAULT_SETTINGS_AUDIO_VOLUME = 1f;
 
     
     public void audioVolumeStatus()
