@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour{
    {
       Debug.Log("Bi-polar story loading");
       SceneManager.LoadScene("TestStory");
-      //Random comment to do test commit
+      //Random comment to do test commit 2
    }
 
 
