@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 52445482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55f44cdbef82e2c41a3e63a482f5f497, type: 3}
+  m_Script: {fileID: 11500000, guid: a77c4c33ca4384bc89a5c4eb36524214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentCharacter: 
@@ -158,6 +158,11 @@ MonoBehaviour:
   Character2: {fileID: 1230239200}
   Character3: {fileID: 324324517}
   Character4: {fileID: 759753503}
+  Character5: {fileID: 138225457}
+  Character6: {fileID: 1122858165}
+  Character7: {fileID: 1199889827}
+  Character8: {fileID: 1989916265}
+  Character9: {fileID: 658959793}
 --- !u!4 &52445484
 Transform:
   m_ObjectHideFlags: 0
