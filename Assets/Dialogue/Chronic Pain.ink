@@ -2,6 +2,15 @@
 
 
 ==== rowanItIsGetting ====
+Gloria: Emily are you ready for school?
+Emily: Yes mom I've got everything I need.
+Gloria: Alright can you make your way to the school bus? I'm running late for work.
+Emily: No worries, I can make it there. Have a good day at work mom. Love you!
+Gloria: Alright thanks honey, love you too. Have a good day at school.
+
+
+
+
 Rowan: It is getting so hectic in the office lately; I can’t believe how much work keeps piling up every time I think we made progress.
 Rowan: I guess it’s probably time to consider adding new blood to our team. We haven’t had any new junior developers in a while now.
 Rowan: But with all this work piled up, I guess I don’t have time to interview anyone. I’ll ask our director to handle the hiring process. 
