@@ -114,3 +114,8 @@ Packages/packages-lock.json
 Packages/manifest.json
 Assets/Prefabs/DialoguePanel.prefab
 .vscode/settings.json
+.vscode/settings.json
+Assets/Prefabs/DialoguePanel.prefab
+Packages/manifest.json
+Packages/packages-lock.json
+ProjectSettings/ProjectVersion.txt
