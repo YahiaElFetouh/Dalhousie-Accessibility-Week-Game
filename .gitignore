@@ -108,3 +108,9 @@ _UpgradeReport_Files/
 Thumbs.db
 Desktop.ini
 .DS_Store
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/InkSettings.asset
+Packages/packages-lock.json
+Packages/manifest.json
+Assets/Prefabs/DialoguePanel.prefab
+.vscode/settings.json
