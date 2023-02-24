@@ -6,9 +6,6 @@ using System.Collections.Generic;
 
 public class FilterDropdown : MonoBehaviour
 {
-
-    
-    
     
     void Start()
     {
@@ -18,8 +15,6 @@ public class FilterDropdown : MonoBehaviour
         
     }
 
-    
-
 
     void DropdownItemSelected(Dropdown d){
         Camera myCamera=Camera.main;
@@ -27,7 +22,6 @@ public class FilterDropdown : MonoBehaviour
         x.Type=d.value;
         
     }
-
 
     
 }
