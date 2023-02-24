@@ -730,6 +730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 0}
+  musicVolumeSettings: {fileID: 0}
+  musicToggleSettings: {fileID: 0}
 --- !u!1 &5798071109772726491
 GameObject:
   m_ObjectHideFlags: 0
