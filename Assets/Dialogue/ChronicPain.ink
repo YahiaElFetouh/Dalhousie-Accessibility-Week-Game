@@ -9,8 +9,12 @@ Gloria: Alright thanks honey, love you too. Have a good day at school.
 -> TeachersCar
 
 === TeachersCar ===
-Gloria: I hope Emily has an easier time with fractions soon, I might have to…
-Gloria has found themselves in a situation in which will change their day-to-day life for ever. Gloria found themselves in pain after the accident and finally visits a walk in clinic due to their busy schedule.
+Gloria: I hope Emily has an easier time with fractions soon
+Gloria: I might have to…
+
+
+Gloria was involved in an accident that changed her day-to-day life for ever. 
+A few days after the accident, she found herself in pain and decides to visit a walk in clinic.
 -> DoctorsRoom1
 
 === DoctorsRoom1 ===

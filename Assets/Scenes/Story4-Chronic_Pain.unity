@@ -1444,7 +1444,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 34394f556e8b02e4185d357ff6ab6f26, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.032
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2368,10 +2368,15 @@ MonoBehaviour:
   original: {fileID: 572994574}
   backgrounds:
   - {fileID: 21300000, guid: ec97478d5173f43848bd27358f64df05, type: 3}
-  - {fileID: 21300000, guid: c2cc2e041f6760041898febcdd7fdb38, type: 3}
-  - {fileID: 21300000, guid: 3eac3e5029d67af4387b771097cbd4e5, type: 3}
+  - {fileID: 21300000, guid: 39269bb5865dc41cfad0c0b96cc21f70, type: 3}
+  - {fileID: 21300000, guid: 252f580586a864ba592269b52ad75f98, type: 3}
+  - {fileID: 21300000, guid: d2cc0c476549c49f58429c1168260e1f, type: 3}
   - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
-  switchScenes: 060000000b0000001600000021000000
+  - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
+  - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
+  - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
+  - {fileID: 21300000, guid: 6d147edabfc15174ab65f516e0f8bc15, type: 3}
+  switchScenes: 06000000080000000a000000110000001200000013000000140000001500000016000000
 --- !u!114 &1517053838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
