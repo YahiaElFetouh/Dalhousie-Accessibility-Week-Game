@@ -7,6 +7,7 @@ public class SliderSave : MonoBehaviour
 {
     private UnityEngine.UI.Slider slider; //Slider Controller
     private new string settingsName; // Settings Name in respect to Game Object interaction.
+    private Dropdown dropdown;
 
 
     // Start is called before the first frame update
@@ -14,10 +15,13 @@ public class SliderSave : MonoBehaviour
     {
         settingsName = this.gameObject.name;
         slider = this.gameObject.GetComponent<UnityEngine.UI.Slider>(); 
+        dropdown = transform.GetComponent<Dropdown>();
+        //dropdown.value
         
         if (PlayerPrefs.HasKey(settingsName))
         {
             slider.value = PlayerPrefs.GetFloat(settingsName);
+            //dropdown.value = PlayerPrefs.GetFloat(settingsName);
             //Debug.Log($"{settingsName} = {PlayerPrefs.GetFloat(settingsName)}");
         }
     }
