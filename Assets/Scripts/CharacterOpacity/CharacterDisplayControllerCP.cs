@@ -12,7 +12,9 @@ public class CharacterDisplayControllerCP : MonoBehaviour
     private TextMeshPro temp;
     private TMP_Text tempTMPText;
     private string tempString;
-
+    private string emotion;
+    
+    public Sprite[] images;
     public GameObject Character1;
     public GameObject Character2;
     public GameObject Character3;
@@ -47,203 +49,388 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         {
             
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
+
             if (textSplit.Length > 0)
             {
-                if (textSplit[0] == "Gloria" || textSplit[0] == "Emily" || textSplit[0] == "Marsha" || textSplit[0] == "Glenn" 
-                || textSplit[0] == "George" || textSplit[0] == "Joseph" || textSplit[0] == "Julie" || textSplit[0] == "Sonya" 
-                || textSplit[0] == "Henry")
+                if (textSplit[0] == "Gloriah" || textSplit[0] == "Glorias" || textSplit[0] == "Gloriaf" || textSplit[0] == "Gloriao" 
+                || textSplit[0] == "Emilyh" || textSplit[0] == "Emilys" || textSplit[0] == "Marshac"|| textSplit[0] == "Marshaa" 
+                || textSplit[0] == "Marshan" || textSplit[0] == "Glennc" || textSplit[0] == "Glennh" || textSplit[0] == "George" 
+                || textSplit[0] == "Joseph" || textSplit[0] == "Julie" || textSplit[0] == "Sonya" 
+                || textSplit[0] == "Henryc" || textSplit[0] == "Henryn")
                 {
                     currentCharacter = textSplit[0];
                 }
             }
             if (previousCharacter != currentCharacter)
             {
-                if (currentCharacter == "Gloria")
+
+                if (currentCharacter == "Gloriah")
                 {
+                    Character1.GetComponent<SpriteRenderer>().sprite = images[0];
                     Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
-                if (currentCharacter == "Emily")
+                if (currentCharacter == "Glorias")
                 {
+                    Character1.GetComponent<SpriteRenderer>().sprite = images[1];
+                    Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Gloriaf")
+                {
+                    Character1.GetComponent<SpriteRenderer>().sprite = images[2];
+                    Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Gloriao")
+                {
+                    Character1.GetComponent<SpriteRenderer>().sprite = images[3];
+                    Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Emilyh")
+                {
+                    Character2.GetComponent<SpriteRenderer>().sprite = images[4];
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
-                if (currentCharacter == "Marsha")
+                if (currentCharacter == "Emilys")
                 {
+                    Character2.GetComponent<SpriteRenderer>().sprite = images[5];
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Marshac")
+                {
+                    Character3.GetComponent<SpriteRenderer>().sprite = images[6];
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
-                if (currentCharacter == "Glenn")
+                if (currentCharacter == "Marshaa")
                 {
+                    Character3.GetComponent<SpriteRenderer>().sprite = images[7];
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Marshan")
+                {
+                    Character3.GetComponent<SpriteRenderer>().sprite = images[8];
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Glennc")
+                {
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[9];
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                }
+                if (currentCharacter == "Glennh")
+                {
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[10];
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 if (currentCharacter == "George")
                 {
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 if (currentCharacter == "Joseph")
                 {
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 if (currentCharacter == "Julie")
                 {
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 if (currentCharacter == "Sonya")
                 {
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                     Character9.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
-                else if (currentCharacter == "Henry")
+                if (currentCharacter == "Henryc")
                 {
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[11];
                     Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
-                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character9.transform.localScale = new Vector3(0.4f,0.4f,0);
+                    Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                }
+                else if (currentCharacter == "Henryn")
+                {
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[12];
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character4.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character5.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character6.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character7.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character8.transform.localScale = new Vector3(0.3f,0.3f,0);
+                    Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character9.transform.localScale = new Vector3(0.4f,0.4f,0);
                     Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                 }
