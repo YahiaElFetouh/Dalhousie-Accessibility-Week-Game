@@ -5,7 +5,7 @@ using UnityEngine;
 public class PauseScript : MonoBehaviour
 {
     // Boolean to keep track of whether the game is paused
-    bool isPaused = false;
+    public static bool isPaused = false;
     
     // Reference to the audio source that plays the music
     AudioSource audioSource;
