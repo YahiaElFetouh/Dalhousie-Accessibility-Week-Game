@@ -6,7 +6,7 @@ using System.Collections.Generic;
 //YouTube. (2020). Unity Ui Tutorial Dropdown C# Scripting. YouTube. 
 //Retrieved March 1, 2023, from https://www.youtube.com/watch?v=URS9A4V_yLc. 
 
-//Also thanks for the help from x691 TA: Anay Awasthi
+//Also thanks for the help from CSCIx691 TA: Anay Awasthi
 
 
 public class FilterDropdown : MonoBehaviour
