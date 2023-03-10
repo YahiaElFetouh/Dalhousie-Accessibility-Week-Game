@@ -49,7 +49,6 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         {
             
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
-
             if (textSplit.Length > 0)
             {
                 if (textSplit[0] == "Gloriah" || textSplit[0] == "Glorias" || textSplit[0] == "Gloriaf" || textSplit[0] == "Gloriao" 
