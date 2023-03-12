@@ -1,5 +1,5 @@
  EXTERNAL changeBackground(background)
--> TeachersHome
+->  TeachersHome
 
 === TeachersHome ===
 
@@ -47,13 +47,21 @@ Gloria: I guess I could try and see a specialist, although I’m not sure I can 
 ~changeBackground(4)
 Glenn: Hi Gloria, your file here says you’ve been having pain for the past 3 months due to a car accident. Could you tell me what symptoms you’re experiencing.
 Gloria: Yes, since the accident I’ve had severe pain that sometimes comes in waves, other days it’s constant and near unbearable. I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
-Glenn: Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. This can occur due to events much like yours. Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
+Glenn: Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. 
+Glenn: This can occur due to events much like yours. Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
 Gloria: Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
-Glenn: Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. If required we can move to more advanced options such as; hydromorphone, morphine, etc. I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
+Glenn: Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. 
+Glenn: If required we can move to more advanced options such as; hydromorphone, morphine, etc. I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
 Gloria: Thank you doctor, I’m just looking for a way to continue and learn how to mediate my symptoms.
--> InformationAndEnding
+-> InformationAndEnding1
 
-= InformationAndEnding
+= InformationAndEnding1
+~changeBackground(1)
+Having the need to be prescribed opioids by the chronic pain specialist Gloria was diagnosed officially with chronic pain. Gloria contacted support groups in which they were able to talk with others similar to themselves and discuss techniques they use to mediate their symptoms.
+->END
+
+
+= InformationAndEnding2
 ~changeBackground(1)
 Having the need to be prescribed opioids by the chronic pain specialist Gloria was diagnosed officially with chronic pain. Gloria contacted support groups in which they were able to talk with others similar to themselves and discuss techniques they use to mediate their symptoms.
 -> TeachersHomeEnding
@@ -92,10 +100,7 @@ Gloria: Yes, the symptoms aren’t easing up. This has been going on for too lon
 Sonya: Alright, I’ll let you know others have come through for something similar and have struggled with the process. Are you sure this is something you want to go through with?
 Gloria: ...I didn’t figure it should be harder than anyone else applying. Between work and Emily I’m not sure I’ll have the time...
 Sonya: How about you head home and take some time to think about it?
-    + Continue with insurance
-        -> PositiveEnding3
-    + Ignore symptoms
-        -> NegativeEnding2
+->TeachersHomeEnding
     
 = PositiveEnding3
 ~changeBackground(6)
@@ -129,4 +134,9 @@ Gloria: Thank you doctor, I’m just looking for a way to continue and learn how
 Emily: Hey mom, how did that meeting with that lady from work? Are they going to be able to help you?
 Gloria: Well honey, they gave me a choice. I could ...
 Emily: Well mum I’ve got faith in you and I’m here for you.
+    + Continue with insurance
+        -> PositiveEnding3
+    + Ignore symptoms
+        -> NegativeEnding2
+
 -> END
