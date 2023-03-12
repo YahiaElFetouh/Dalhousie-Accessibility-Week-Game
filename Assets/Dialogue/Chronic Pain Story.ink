@@ -127,7 +127,7 @@ Glenn: Alright Gloria, I want you to know that you’re not alone in this. It so
 Gloria: Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
 Glenn: Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. If required we can move to more advanced options such as; hydromorphone, morphine, etc. I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
 Gloria: Thank you doctor, I’m just looking for a way to continue and learn how to mediate my symptoms.
-->InformationAndEnding 
+->InformationAndEnding2 
 
 = TeachersHomeEnding
 ~changeBackground(3)
