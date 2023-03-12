@@ -154,7 +154,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCharacter: 
   previousCharacter: 
-  images: []
+  images:
+  - {fileID: 21300000, guid: 8669952cee16e46e2be52f2e34526914, type: 3}
+  - {fileID: 21300000, guid: 8c1e682c3592d4333852d3c787ff0ee5, type: 3}
+  - {fileID: 21300000, guid: 207be97ad868d48dc8d0e121406cafc7, type: 3}
+  - {fileID: 21300000, guid: a2df16ea260bb40459d3cadcdc1b3fcd, type: 3}
+  - {fileID: 21300000, guid: e9055ce8cedb54f1a834264401810cc8, type: 3}
+  - {fileID: 21300000, guid: 793e0bab59b3a474d8d2d4b7556329a3, type: 3}
+  - {fileID: 21300000, guid: ce178df907be84756a5c21560de6903a, type: 3}
+  - {fileID: 21300000, guid: b1378648983bb4a3a9a57cff4eb19cec, type: 3}
+  - {fileID: 21300000, guid: ed28e68486f824817b77cbf4735a746e, type: 3}
+  - {fileID: 21300000, guid: 36ca3eb7b118240f79d38350167bcec7, type: 3}
+  - {fileID: 21300000, guid: 01dec0d5da0de4af09ab63dccd4247f3, type: 3}
+  - {fileID: 21300000, guid: 42d6bf4d1a5604781ad396f1befc093a, type: 3}
+  - {fileID: 21300000, guid: 3072220e257e740eeb865a91110e0b38, type: 3}
   Character1: {fileID: 833005309}
   Character2: {fileID: 1230239200}
   Character3: {fileID: 324324517}
