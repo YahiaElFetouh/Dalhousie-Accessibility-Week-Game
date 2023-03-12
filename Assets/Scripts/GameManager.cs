@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     private int linesRead = 0;
     private int currentBG = 0;
 
+    // Chronic pain variables
+    // private Story currentStory;
+    private string currentText;
+    
     private void Start()
     {
 
@@ -22,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-
+        // Debug.Log("Background Switch" + DialogueManager.Continue());
     }
 
     public void incrementLines()
@@ -38,5 +42,10 @@ public class GameManager : MonoBehaviour
     {
         original.sprite = backgrounds[currentBG];
         currentBG++;
+    }
+
+
+    public void changeBackground(int i){
+        original.sprite = backgrounds[i];
     }
 }
