@@ -26,7 +26,8 @@ A few days after the accident, she felt lingering pain and decides to visit a wa
 Gloria: Hi Doctor, even though it’s been a while after the accident I still have pain within my neck.
 Marsha: Alright, I’ll do a check up and see what I can find.
 Marsha: Well I can’t find anything wrong with you. Was there anything else you were experiencing?
-Gloria: The pain can come in waves, other days it hurts throughout the whole day. I’ve been losing sleep throughout the night and have trouble making my way around the house.
+Gloria: The pain can come in waves, other days it hurts throughout the whole day. 
+Gloria: I’ve been losing sleep throughout the night and have trouble making my way around the house.
 Marsha: Hunh, well there’s nothing more I can do for you. Take some Tylenol and see if it goes away.
 Gloria: I’ve tried, and it isn’t enough. I’m worried this is something more serious.
 Marsha: Well, like I said there’s nothing more I can do for you. You could try finding someone else if you’d like.
@@ -46,12 +47,16 @@ Gloria: I guess I could try and see a specialist, although I’m not sure I can 
 = PositiveEnding 
 ~changeBackground(4)
 Glenn: Hi Gloria, your file here says you’ve been having pain for the past 3 months due to a car accident. Could you tell me what symptoms you’re experiencing.
-Gloria: Yes, since the accident I’ve had severe pain that sometimes comes in waves, other days it’s constant and near unbearable. I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
+Gloria: Yes, since the accident I’ve had severe pain that sometimes comes in waves, other days it’s constant and near unbearable. 
+Gloria: I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
 Glenn: Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. 
-Glenn: This can occur due to events much like yours. Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
+Glenn: This can occur due to events much like yours. 
+Glenn: Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
 Gloria: Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
 Glenn: Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. 
-Glenn: If required we can move to more advanced options such as; hydromorphone, morphine, etc. I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
+Glenn: If required we can move to more advanced options such as; hydromorphone, morphine, etc. 
+Glenn: I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. 
+Glenn: With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
 Gloria: Thank you doctor, I’m just looking for a way to continue and learn how to mediate my symptoms.
 -> InformationAndEnding1
 
