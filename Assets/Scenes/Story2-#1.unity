@@ -208,87 +208,6 @@ MonoBehaviour:
   previousCharacter: 
   Character1: {fileID: 284156398}
   Character2: {fileID: 389388955}
---- !u!1 &224203170
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 224203172}
-  - component: {fileID: 224203171}
-  m_Layer: 0
-  m_Name: Accessibility Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &224203171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224203170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd9e42417444b96439dd7aeff0814d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_DefaultState: 0
-  m_AutoTurnOnIfScreenReaderDetected: 1
-  m_RecheckAutoEnablingOnResume: 0
-  m_SaveEnabledState: 0
-  m_HandleUI: 1
-  m_HandleMagicGestures: 1
-  m_ExploreByTouch: 1
-  m_ReadDisabledInteractables: 1
-  m_CyclicMenus: 0
-  m_AllowBuiltInVirtualKeyboard: 1
-  m_DebugOutput: 0
-  m_WindowsUseMouseSwipes: 0
-  m_EditorOverride: 0
-  m_EditorEnabledState: 0
-  m_WebGLTTS: 1
-  m_GoogleTTSAPIKey: 
-  m_WindowsTTS: 1
-  m_WindowsTTSVolume: 100
-  m_WindowsUseKeys: 1
-  m_AndroidTTS: 1
-  m_AndroidUseUpAndDownForElements: 0
-  m_iOSTTS: 1
-  m_MacOSTTS: 1
-  m_UINavigationClick: {fileID: 0}
-  m_UIInteract: {fileID: 0}
-  m_UIFocusEnter: {fileID: 0}
-  m_UIFocusLeave: {fileID: 0}
-  m_UIBoundsReached: {fileID: 0}
-  m_UIPopUpOpen: {fileID: 0}
-  m_UIPopUpClose: {fileID: 0}
-  m_AudioPlayer: {fileID: 0}
-  m_SFXPlayer: {fileID: 0}
-  m_Frame: {fileID: 0}
-  m_FrameTemplate: {fileID: 0}
-  m_TouchBlocker: {fileID: 0}
-  m_DebugOutputLabel: {fileID: 0}
-  m_AllowVoiceOverGlobal: 1
-  m_DetectVoiceOverAtRuntime: 1
---- !u!4 &224203172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224203170}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 282.27478, y: 177.39409, z: -74.000404}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &284156398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,10 +2208,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9200171549847551129, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9200171550159372806, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2355,43 +2270,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2759681106927952625, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
   m_PrefabInstance: {fileID: 1967067953}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1967067975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967067959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea9b8d2ae416b174098de682aa8bc96a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1967067976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967067959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b8ed8a1982c3745b6fb7dd1a6cce2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PopUp: 0
-  m_AllowExternalJoining: 0
-  m_AutoRead: 0
-  m_Priority: 0
-  m_ContainerName: 
-  m_IsLocalizationKey: 0
-  m_2DNavigation: 0
-  m_ConstrainToContainerUp: 0
-  m_ConstrainToContainerDown: 0
-  m_ConstrainToContainerLeft: 0
-  m_ConstrainToContainerRight: 0
-  m_AllowTouchExplore: 1
-  m_DoubleCheckUIElementsPositions: 1
 --- !u!1 &2008305200
 GameObject:
   m_ObjectHideFlags: 0

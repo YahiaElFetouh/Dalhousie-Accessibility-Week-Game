@@ -5,8 +5,6 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -164,18 +162,6 @@ public class DialogueManager : MonoBehaviour
                     
                     gameManager.incrementLines(); //Updated to next background image
                 }
-
-                // Get a reference to the UAP_AccessibilityManager component
-                UAP_AccessibilityManager accessibilityManager = GameObject.FindObjectOfType<UAP_AccessibilityManager>();
-
-                // Get a reference to the text component of the dialogue box
-                Text dialogueTextComponent = dialoguePanel.GetComponentInChildren<Text>();
-
-                // Get the text currently displayed in the dialogue box
-                string TTSText = dialogueTextComponent.text;
-
-                // Trigger the TTS system to play the audio for the text
-                UAP_AccessibilityManager.Say(TTSText, false, false, UAP_AudioQueue.EInterrupt.Elements);
 
                 // display choices, if any, for this dialogue line
                 displayChoices();
