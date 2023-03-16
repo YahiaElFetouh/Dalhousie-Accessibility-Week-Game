@@ -50,7 +50,7 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         if (textbox != null)
         {
             
-            textSplit = textbox.GetComponent<TMP_Text>().text.Split(',');
+            textSplit = textbox.GetComponent<TMP_Text>().text.Split('(');
             textSplitEmotion = textbox.GetComponent<TMP_Text>().text.Split(':');
 
             if (textSplit.Length > 0)
@@ -60,7 +60,7 @@ public class CharacterDisplayControllerCP : MonoBehaviour
                 || textSplit[0] == "Henry")
                 {
                     currentCharacter = textSplit[0];
-
+                    
                     if (textSplitEmotion.Length > 0){
                         currentEmotion = textSplitEmotion[0];
                     }
@@ -70,16 +70,16 @@ public class CharacterDisplayControllerCP : MonoBehaviour
 
             if (currentCharacter == "Gloria")
             {
-                if (currentEmotion == "Gloria,h"){
+                if (currentEmotion == "Gloria(H)"){
                     Character1.GetComponent<SpriteRenderer>().sprite = images[0];
                 } 
-                if (currentEmotion == "Gloria,s"){
+                if (currentEmotion == "Gloria(S)"){
                     Character1.GetComponent<SpriteRenderer>().sprite = images[1];
                 } 
-                if (currentEmotion == "Gloria,f"){
+                if (currentEmotion == "Gloria(F)"){
                     Character1.GetComponent<SpriteRenderer>().sprite = images[2];
                 } 
-                else if (currentEmotion == "Gloria,o"){
+                else if (currentEmotion == "Gloria(O)"){
                     Character1.GetComponent<SpriteRenderer>().sprite = images[3];
                 } 
                 Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
@@ -103,10 +103,10 @@ public class CharacterDisplayControllerCP : MonoBehaviour
             }
             if (currentCharacter == "Emily")
             {
-                if (currentEmotion == "Emily,h"){
+                if (currentEmotion == "Emily(H)"){
                     Character2.GetComponent<SpriteRenderer>().sprite = images[4];
                 } 
-                else if (currentEmotion == "Emily,s"){
+                else if (currentEmotion == "Emily(S)"){
                     Character2.GetComponent<SpriteRenderer>().sprite = images[5];
                 }
                 Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
@@ -130,13 +130,13 @@ public class CharacterDisplayControllerCP : MonoBehaviour
             }
             if (currentCharacter == "Marsha")
             {
-                if (currentEmotion == "Marsha,c"){
+                if (currentEmotion == "Marsha(C)"){
                     Character3.GetComponent<SpriteRenderer>().sprite = images[6];
                 }
-                if (currentEmotion == "Marsha,a"){
-                    Character2.GetComponent<SpriteRenderer>().sprite = images[7];
+                if (currentEmotion == "Marsha(A)"){
+                    Character3.GetComponent<SpriteRenderer>().sprite = images[7];
                 }
-                else if (currentEmotion == "Marsha,n"){
+                else if (currentEmotion == "Marsha(N)"){
                     Character3.GetComponent<SpriteRenderer>().sprite = images[8];
                 }
                 Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
@@ -160,11 +160,11 @@ public class CharacterDisplayControllerCP : MonoBehaviour
             }
             if (currentCharacter == "Glenn")
             {
-                if (currentEmotion == "Glenn,c"){
-                    Character3.GetComponent<SpriteRenderer>().sprite = images[9];
+                if (currentEmotion == "Glenn(C)"){
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[9];
                 }
-                else if (currentEmotion == "Glenn,h"){
-                    Character3.GetComponent<SpriteRenderer>().sprite = images[10];
+                else if (currentEmotion == "Glenn(H)"){
+                    Character4.GetComponent<SpriteRenderer>().sprite = images[10];
                 }
                 Character4.GetComponent<SpriteRenderer>().sprite = images[9];
                 Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
@@ -272,11 +272,11 @@ public class CharacterDisplayControllerCP : MonoBehaviour
             }
             else if (currentCharacter == "Henry")
             {
-                if (currentEmotion == "Henry,c"){
-                    Character3.GetComponent<SpriteRenderer>().sprite = images[11];
+                if (currentEmotion == "Henry(C)"){
+                    Character9.GetComponent<SpriteRenderer>().sprite = images[11];
                 }
-                else if (currentEmotion == "Henry,n"){
-                    Character3.GetComponent<SpriteRenderer>().sprite = images[12];
+                else if (currentEmotion == "Henry(N)"){
+                    Character9.GetComponent<SpriteRenderer>().sprite = images[12];
                 }
                 Character4.GetComponent<SpriteRenderer>().sprite = images[11];
                 Character1.transform.localScale = new Vector3(0.3f,0.3f,0);

@@ -49,12 +49,12 @@ public class Blink : MonoBehaviour
 
             if (textSplit1.Length > 0)
             {
-                if (textSplit1[0] == "Gloria: I mig"){
+                if (textSplit1[0] == "Gloria(H): I mig"){
                     moment1 = textSplit1[0];
                 }
 
                 // Playing the blink animation and crash sound when Gloria crashes
-                if(moment1 == "Gloria: I mig" && !played1) 
+                if(moment1 == "Gloria(H): I mig" && !played1) 
                 {
                     topLid.GetComponent<Animation>().Play("BlinkTop");
                     bottomLid.GetComponent<Animation>().Play("BlinkBottom");
@@ -65,12 +65,12 @@ public class Blink : MonoBehaviour
 
             if (textSplit2.Length > 0)
             {
-                if (textSplit2[0] == "Gloria: Hi Doc"){
+                if (textSplit2[0] == "Gloria(S): Hi Doc"){
                     moment2 = textSplit2[0];
                 }
 
                 // Playing opening animation once Gloria makes it to the doctor's office
-                if(moment2 == "Gloria: Hi Doc" && !played2) 
+                if(moment2 == "Gloria(S): Hi Doc" && !played2) 
                 {
                     topLid.GetComponent<Animation>().Play("OpenTop");
                     bottomLid.GetComponent<Animation>().Play("OpenBottom");
