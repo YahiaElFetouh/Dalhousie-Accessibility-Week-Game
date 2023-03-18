@@ -3799,7 +3799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Substance Use Story
+  m_text: Substance Use
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
   m_sharedMaterial: {fileID: -4433160157599194980, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
@@ -5717,7 +5717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bipolar Story
+  m_text: Bipolar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
   m_sharedMaterial: {fileID: -4433160157599194980, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
