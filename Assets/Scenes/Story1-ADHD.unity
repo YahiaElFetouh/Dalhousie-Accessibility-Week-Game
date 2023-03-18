@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 326427105}
   dialogueText: {fileID: 1517053838}
-  typeWriterSpeed: 30
+  typeWriterSpeed: 45
   choices:
   - {fileID: 1863070720}
   - {fileID: 1905964514}
