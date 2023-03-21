@@ -251,7 +251,7 @@ SpriteRenderer:
   m_SortingLayerID: 419077601
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47c20360385ad4e6eb1076ae0e0ea1da, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -270,8 +270,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66022182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4282999, y: -7.8672, z: 10}
-  m_LocalScale: {x: 20.08894, y: 5.783555, z: 1}
+  m_LocalPosition: {x: -0.1, y: -9.2, z: 10}
+  m_LocalScale: {x: 1.3801943, y: 1.0973974, z: 1}
   m_Children: []
   m_Father: {fileID: 481620047}
   m_RootOrder: 1
@@ -289,6 +289,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 126d5cb7aeeb640b887f2460bafcfb70, type: 2}
   - {fileID: 7400000, guid: 61fa1599ba65b427ebc1c61326fab55f, type: 2}
+  - {fileID: 7400000, guid: d1c596c1cc95c4cacb92f393d5bba0b7, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -804,7 +805,7 @@ SpriteRenderer:
   m_SortingLayerID: 419077601
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47c20360385ad4e6eb1076ae0e0ea1da, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -823,8 +824,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271935086}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.51, y: 7.98, z: 10}
-  m_LocalScale: {x: 20.088936, y: 5.783555, z: 1}
+  m_LocalPosition: {x: 0.34, y: 8, z: 10}
+  m_LocalScale: {x: 1.380194, y: 1.097397, z: 1}
   m_Children: []
   m_Father: {fileID: 481620047}
   m_RootOrder: 0
@@ -842,6 +843,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: f84f207a34c07427b87a463075687ef7, type: 2}
   - {fileID: 7400000, guid: be7bd2a4f3b3b48a59b2c000799bfb9f, type: 2}
+  - {fileID: 7400000, guid: d293f2918f3e14fdcbb72ea248d8795f, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -922,7 +924,7 @@ SpriteRenderer:
   m_SortingLayerID: 1597249469
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce178df907be84756a5c21560de6903a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed28e68486f824817b77cbf4735a746e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
