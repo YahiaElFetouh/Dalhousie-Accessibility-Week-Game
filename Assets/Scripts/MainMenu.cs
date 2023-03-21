@@ -45,12 +45,6 @@ public class MainMenu : MonoBehaviour{
       SceneManager.LoadScene("Story3-BPD");
    }
 
-   public void LoadChronicPainStory()
-   {
-      Debug.Log("Chronic pain story loading");
-      SceneManager.LoadScene("Story4-Chronic_Pain");
-   }   
-
 
    /* Quit Game Application */
    public void QuitGame()

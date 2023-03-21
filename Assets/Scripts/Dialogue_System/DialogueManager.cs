@@ -47,6 +47,9 @@ public class DialogueManager : MonoBehaviour
 
     public void Start()
     {
+        
+
+
         gameManager = FindObjectOfType<GameManager>();
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
@@ -89,17 +92,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-
         currentStory = new Story(inkJSON.text);
         Debug.Log("Story: " + inkJSON.text);
+
         dialogueIsPlaying = true;
-
-        currentStory.BindExternalFunction("changeBackground", (int background) => {
-            Debug.Log("to change" +background);
-            gameManager.changeBackground(background);
-
-
-        });
 
         continueDialogueCue.SetActive(true);
         Debug.Log("level status [0?]: " + levelOne_Guide);
@@ -116,7 +112,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-        currentStory.UnbindExternalFunction("changeBackground");
+
         if(dialogueIsPlaying == false) {
             // if (SceneManager.GetActiveScene().name == "Story1-ADHD") {
             //     SceneManager.LoadScene("Story2-Substance_Abuse");
@@ -137,8 +133,6 @@ public class DialogueManager : MonoBehaviour
 
         }
         dialogueText.text = "";
-
-        
     }
 
 
@@ -260,20 +254,10 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        Debug.Log("Scene-name after choice: " + SceneManager.GetActiveScene().name);
         currentStory.ChooseChoiceIndex(choiceIndex);
         
-        if(SceneManager.GetActiveScene().name == "Story4-Chronic_Pain") {
-            if(choiceIndex == 0)
-            gameManager.changeBackground(1);
-
-        }
-
         if (SceneManager.GetActiveScene().name == "Story2-Substance_Abuse" && choiceIndex == 0) {
             SceneManager.LoadScene("Story2-#1");
         }
     }
-
-
-
 }
