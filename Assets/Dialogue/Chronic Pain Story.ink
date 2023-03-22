@@ -2,12 +2,12 @@
 ->  TeachersHome
 
 === TeachersHome ===
-~changeBackground(3)
-Gloria: Emily are you ready for school?
-Emily: Yes mom I’ve got everything I need.
-Gloria: Alright can you make your way to the school bus? I’m running late for work.
-Emily: No worries, I can make it there. Have a good day at work mom. Love you!
-Gloria: Alright thanks honey, love you too. Have a good day at school.
+
+Gloria(H): Emily are you ready for school?
+Emily(H): Yes mom I’ve got everything I need.
+Gloria(H): Alright can you make your way to the school bus? I’m running late for work.
+Emily(H): No worries, I can make it there. Have a good day at work mom. Love you!
+Gloria(H): Alright thanks honey, love you too. Have a good day at school.
 -> TeachersCar
 
 === TeachersCar ===
@@ -126,13 +126,12 @@ Gloria(S): ...Okay, I’ll have to think about it.
 
 = PositiveEnding4
 ~changeBackground(2)
-Glenn: Hi Gloria, your file here says you’ve been having pain for the past 3 months due to a car accident. Could you tell me what symptoms you’re experiencing.
-Gloria: Yes, since the accident I’ve had severe pain that sometimes comes in waves, other days it’s constant and near unbearable. I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
-Glenn: Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. This can occur due to events much like yours. Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
-Gloria: Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
-Glenn: Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. If required we can move to more advanced options such as; hydromorphone, morphine, etc. 
-Glenn: I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
-Gloria: Thank you doctor, I’m just looking for a way to continue and learn how to mediate my symptoms.
+Glenn(C): Hi Gloria, your file here says you’ve been having pain for the past 3 months due to a car accident. Could you tell me what symptoms you’re experiencing.
+Gloria(S): Yes, since the accident I’ve had severe pain that sometimes comes in waves, other days it’s constant and near unbearable. I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
+Glenn(C): Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. This can occur due to events much like yours. Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
+Gloria(S): Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
+Glenn(N): Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. If required we can move to more advanced options such as; hydromorphone, morphine, etc. I’ll also provide you with some contact information for support groups for those with and family members affected by chronic pain. With these options you may not be fully cured however will have mediation strategies and learn to live with your condition.
+Gloria(S): Thank you doctor, I’m just looking for a way to continue and learn how to mediate my symptoms.
 ->InformationAndEnding2 
 
 = TeachersHomeEnding
