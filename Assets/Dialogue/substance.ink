@@ -22,7 +22,7 @@ Allie: I wake up to the deafening sound of my alarm clock.
 
 Later that day...
 
-Allie: I had made it to school on the bus without anyone noticing the scars.
+Allie(J): I had made it to school on the bus without anyone noticing the scars.
 ...But that was the easy part. Everyone on the bus wears their coat.
 ...I walk briskly down the hall, hoping to get to class as quickly as possible without drawing attention to myself.
 ...I need to keep moving to avoid being marked as tardy. Nothing draws more attention to a person than walking into class late.

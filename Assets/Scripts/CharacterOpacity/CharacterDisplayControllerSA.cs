@@ -8,14 +8,16 @@ public class CharacterDisplayControllerSA : MonoBehaviour
     private GameObject textbox;
     public string currentCharacter;
     public string previousCharacter;
+    public string currentEmotion;
+    public string previousEmotion;
     private string[] textSplit;
     private TextMeshPro temp;
     private TMP_Text tempTMPText;
     private string tempString;
 
+    public Sprite[] images;
     public GameObject Character1;
     public GameObject Character2;
-    // public GameObject Character3;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,6 @@ public class CharacterDisplayControllerSA : MonoBehaviour
         previousCharacter = "Nobody";
         Character1.SetActive(false);
         Character2.SetActive(false);
-        // Character3.SetActive(false);
         
     }
 
@@ -32,74 +33,58 @@ public class CharacterDisplayControllerSA : MonoBehaviour
     void Update()
     {
         textbox = GameObject.Find("DialogueText");
-        //print(textbox);
+
         if (textbox != null)
         {
             textSplit = textbox.GetComponent<TMP_Text>().text.Split(':');
-            // print(textSplit[0]);
 
             if (textSplit.Length > 0)
             {
-                if (textSplit[0] == "VP" || textSplit[0] == "Allie")
+                if (textSplit[0] == "VP" || textSplit[0] == "Allie" || currentCharacter == "Allie(J)")
                 {
                     currentCharacter = textSplit[0];
+                    currentEmotion = textSplit[0];
                 }
-                else if (textSplit[0] != "" && textSplit[0] != "V" && textSplit[0] != "A" && textSplit[0] != "Al" && textSplit[0] != "All" && textSplit[0] != "Alli")
+                else if (textSplit[0] != "" && textSplit[0] != "V" && textSplit[0] != "A" && textSplit[0] != "Al" && 
+                textSplit[0] != "All" && textSplit[0] != "Alli" && textSplit[0] != "Allie" && textSplit[0] != "Allie("
+                && textSplit[0] != "Allie(J")
                 {
                     currentCharacter = "Nobody";
+                    currentEmotion = textSplit[0];
                 }
             }
+            Debug.Log(currentCharacter);
             
             if (previousCharacter != currentCharacter)
             {
                 if (currentCharacter == "Nobody")
                 {
-                    //Character1.transform.localScale = new Vector3(5,5,0);
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                    //Character2.transform.localScale = new Vector3(3,3,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    // Character3.transform.localScale = new Vector3(3,3,0);
-                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 else if (currentCharacter == "VP")
                 {
-                    //Character1.transform.localScale = new Vector3(3,3,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    //Character2.transform.localScale = new Vector3(5,5,0);
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                    // Character3.transform.localScale = new Vector3(3,3,0);
-                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
-                else if (currentCharacter == "Allie")
+                else if (currentCharacter == "Allie" || currentCharacter == "Allie(J)")
                 {
-                    //Character1.transform.localScale = new Vector3(3,3,0);
-                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    //Character2.transform.localScale = new Vector3(3,3,0);
-                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    // Character3.transform.localScale = new Vector3(5,5,0);
-                    // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                    if (currentEmotion == "Allie(J)") 
+                    {
+                        Character1.GetComponent<SpriteRenderer>().sprite = images[0];
+                    }
+                    Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                 }
                 
                 previousCharacter = currentCharacter;
                 Character1.SetActive(true);
                 Character2.SetActive(true);
-                // Character3.SetActive(true);
             }
             else
             {
                 Character1.SetActive(true); //Allie is 1st to speak
                 Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                /**
-                Character1.SetActive(true);
-                Character2.SetActive(true);
-                // Character3.SetActive(true);
-                // Character1.transform.localScale = new Vector3(5,5,0);
-                Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                // Character2.transform.localScale = new Vector3(3,3,0);
-                Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                // Character3.transform.localScale = new Vector3(3,3,0);
-                // Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                **/
             }
         }
 
