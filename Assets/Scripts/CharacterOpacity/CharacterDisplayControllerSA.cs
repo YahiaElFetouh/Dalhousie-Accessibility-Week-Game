@@ -40,7 +40,7 @@ public class CharacterDisplayControllerSA : MonoBehaviour
 
             if (textSplit.Length > 0)
             {
-                if (textSplit[0] == "VP" || textSplit[0] == "Allie" || currentCharacter == "Allie(J)")
+                if (textSplit[0] == "VP" || textSplit[0] == "Allie" || textSplit[0] == "Allie(J)")
                 {
                     currentCharacter = textSplit[0];
                     currentEmotion = textSplit[0];
