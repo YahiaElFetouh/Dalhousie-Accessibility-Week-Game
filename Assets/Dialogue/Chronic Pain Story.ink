@@ -2,7 +2,7 @@
 ->  TeachersHome
 
 === TeachersHome ===
-
+~changeBackground(3)
 Gloria(H): Emily are you ready for school?
 Emily(H): Yes mom I’ve got everything I need.
 Gloria(H): Alright can you make your way to the school bus? I’m running late for work.
@@ -28,7 +28,7 @@ Marsha(N): Alright, I’ll do a check up and see what I can find.
 Marsha(C): Well I can’t find anything wrong with you. Was there anything else you were experiencing?
 Gloria(S): The pain can come in waves, other days it hurts throughout the whole day. 
 Gloria(S): I’ve been losing sleep throughout the night and have trouble making my way around the house.
-Marsha(C): Hunh, well there’s nothing more I can do for you. Take some Tylenol and see if it goes away.
+Marsha(C): Hmm, well there’s nothing more I can do for you. Take some Tylenol and see if it goes away.
 Gloria(F): I’ve tried, and it isn’t enough. I’m worried this is something more serious.
 Marsha(A): Well, like I said there’s nothing more I can do for you. You could try finding someone else if you’d like.
 -> TeachersHouse
@@ -99,7 +99,7 @@ Due to external pressure Gloria chooses to continue ignoring the symptoms of the
 ->END
 
 = PositiveEnding2
-~changeBackground(6)
+~changeBackground(7)
 Sonya: Good afternoon Gloria, your file says you’re here to apply for disability insurance for a case of.... Chronic pain?
 Gloria(S): Yes, the symptoms aren’t easing up. This has been going on for too long and it’s time for me to take action.
 Sonya: Alright, I’ll let you know others have come through for something similar and have struggled with the process. Are you sure this is something you want to go through with?
@@ -108,7 +108,7 @@ Sonya: How about you head home and take some time to think about it?
 ->TeachersHomeEnding
     
 = PositiveEnding3
-~changeBackground(6)
+~changeBackground(7)
 Gloria had decided to continue with the insurance process. The insurance company told Gloria to go see a doctor from their choosing.
 Henry(C): So Gloria, your file here says you’ve been experiencing symptoms of chronic pain. Is this something you’ve been diagnosed by another doctor for?
 Gloria(S): I have seen another doctor although they didn’t diagnose me with chronic pain. They told me to take Tylenol and sent me on my way.
@@ -136,8 +136,8 @@ Gloria(S): Thank you doctor, I’m just looking for a way to continue and learn 
 
 = TeachersHomeEnding
 ~changeBackground(3)
-Emily(S): Hey mom, how did that meeting with that lady from work? Are they going to be able to help you?
-Gloria(S): Well honey, they gave me a choice. I could ...
+Emily(S): Hey mom, how did that meeting with that lady from work go? Are they going to be able to help you?
+Gloria(S): Well honey, I have a choice...
 Emily(H): Well mum I’ve got faith in you and I’m here for you.
     + Continue with insurance
         -> PositiveEnding3
