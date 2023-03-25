@@ -51,6 +51,12 @@ public class MainMenu : MonoBehaviour{
       SceneManager.LoadScene("Story4-Chronic_Pain");
    }   
 
+   public void loadMainMenu()
+   {
+      Debug.Log("ADHD story loading");
+      SceneManager.LoadScene("MainMenu");
+   }
+
 
    /* Quit Game Application */
    public void QuitGame()
