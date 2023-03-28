@@ -3222,6 +3222,7 @@ MonoBehaviour:
   cursorSettings: {fileID: 0}
   musicVolumeSettings: {fileID: 0}
   musicToggleSettings: {fileID: 0}
+  filter: {fileID: 0}
 --- !u!114 &610080746
 MonoBehaviour:
   m_ObjectHideFlags: 0

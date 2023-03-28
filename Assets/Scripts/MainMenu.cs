@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour{   
@@ -8,6 +9,7 @@ public class MainMenu : MonoBehaviour{
    public CursorSize cursorSettings;
    public MusicVolume musicVolumeSettings;
    public SoundManager musicToggleSettings;
+   public FilterDropdown filter;
 
 
    // Start is called before the first frame update
@@ -17,7 +19,14 @@ public class MainMenu : MonoBehaviour{
       cursorSettings.cursorSizeStatus();
       musicVolumeSettings.audioVolumeStatus();
       musicToggleSettings.musicToggleStatus();
+
+      //Keenan added this
+      filter.dropdownStatus();
    }
+
+
+
+
 
 
    /* Play the game from beginning to end */
