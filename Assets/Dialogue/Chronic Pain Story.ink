@@ -51,7 +51,7 @@ Gloria(S): Yes, since the accident I’ve had severe pain that sometimes comes i
 Gloria(S): I’ve been struggling sleeping much at night and I’ve had trouble getting around the house.
 Glenn(C): Alright Gloria, I want you to know that you’re not alone in this. It sounds like you’re exhibiting symptoms of chronic pain. 
 Glenn(C): This can occur due to events much like yours. 
-Glenn(C): Since you’ve been experienced these symptoms for this long we can begin with mediation techniques however I would like to inform you that this may not go away.
+Glenn(C): Since you’ve been experienced these symptoms for this long we can begin with medication techniques however I would like to inform you that this may not go away.
 Gloria(S): Thank you for taking this seriously. I feel as if there’s no one I can talk to about this and most people I do try don’t believe me. What options are available?
 Glenn(N): Well we can begin with medication, we’ll start with standard anti-inflammatory acetaminophen. Take this sparingly as too much can cause problems. 
 Glenn(N): If required we can move to more advanced options such as; hydromorphone, morphine, etc. 
@@ -77,8 +77,12 @@ Gloria(S): Alright everyone, as mentioned in the previous lecture your assignmen
 Gloria(S): …your assignment will be…
 Gloria(S): …will be due on…
 
-As Gloria listened to the walk in clinic doctor and tried to ignore their symptoms, they’ve feinted. After a rest at the schools infirmary Gloria is on their lunch break with their colleagues.
+~changeBackground(1)
+Because Gloria's pain was dismissed by the doctor in the walk-in clinic, She felt that she had no choice but to try to live with the pain.
+While giving a course lecture, she began to faint due to loss of sleep from the pain. 
+After class, a couple of students were especially concerned and spoke to another faculty member whom they knew in the department, asking that they check in on Gloria's well-being. 
 -> LunchRoom
+
 
 = LunchRoom
 ~changeBackground(5)

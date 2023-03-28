@@ -2489,7 +2489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_fontSize
-      value: 28
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_fontAsset
@@ -2509,7 +2509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_fontSizeBase
-      value: 28
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_sharedMaterial
@@ -2899,6 +2899,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 252f580586a864ba592269b52ad75f98, type: 3}
   - {fileID: 21300000, guid: 0ec01838bfccc4a0e81593adcedd7c4b, type: 3}
   - {fileID: 21300000, guid: 0e5e321dfd4214adf968b7d7547da6f9, type: 3}
+  - {fileID: 21300000, guid: 9d5db0132902b47ffbbd3fce5eadc8a1, type: 3}
   switchScenes: 
 --- !u!114 &1517053838 stripped
 MonoBehaviour:
