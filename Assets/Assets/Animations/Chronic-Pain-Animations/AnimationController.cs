@@ -13,6 +13,8 @@ public class AnimationController : MonoBehaviour
     private bool played2;
     private bool played3;
     private bool played4;
+    private bool played5;
+    private bool played6;
 
     private int linesRead = 0;
 
@@ -36,6 +38,8 @@ public class AnimationController : MonoBehaviour
         played2 = false;
         played3 = false;
         played4 = false;
+        played5 = false;
+        played6 = false;
     }
 
     // Update is called once per frame
@@ -95,6 +99,30 @@ public class AnimationController : MonoBehaviour
                         topLid.GetComponent<Animation>().Play("OpenTop");
                         bottomLid.GetComponent<Animation>().Play("OpenBottom");
                         played4 = true;
+                    }  
+                }
+
+                textSplit = textbox.GetComponent<TMP_Text>().text.Split('t');
+                if (textSplit[0] == "Due " || textSplit[0] == "Having ")
+                {
+                    // Covering characters during information scenes
+                    if (!played5)
+                    {
+                        topLid.GetComponent<Animation>().Play("TransitionTop");
+                        bottomLid.GetComponent<Animation>().Play("TransitionBottom");
+                        played5 = true;
+                    }  
+                }
+
+                textSplit = textbox.GetComponent<TMP_Text>().text.Split(',');
+                if (textSplit[0] == "Emily(S): Hey mom")
+                {
+                    // Ending the transition
+                    if (!played6)
+                    {
+                        topLid.GetComponent<Animation>().Play("QuickTop");
+                        bottomLid.GetComponent<Animation>().Play("QuickBottom");
+                        played6 = true;
                     }  
                 }
             }
