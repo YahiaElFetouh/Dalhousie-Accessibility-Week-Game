@@ -102,8 +102,8 @@ public class AnimationController : MonoBehaviour
                     }  
                 }
 
-                textSplit = textbox.GetComponent<TMP_Text>().text.Split('t');
-                if (textSplit[0] == "Due " || textSplit[0] == "Having ")
+                textSplit = textbox.GetComponent<TMP_Text>().text.Split('.');
+                if (textSplit[0].Contains("my symptoms") || textSplit[0].Contains("Ignore symptoms"))
                 {
                     // Covering characters during information scenes
                     if (!played5)
@@ -114,8 +114,7 @@ public class AnimationController : MonoBehaviour
                     }  
                 }
 
-                textSplit = textbox.GetComponent<TMP_Text>().text.Split(',');
-                if (textSplit[0] == "Emily(S): Hey mom")
+                if (textSplit[0].Contains("mediate their symptoms"))
                 {
                     // Ending the transition
                     if (!played6)
