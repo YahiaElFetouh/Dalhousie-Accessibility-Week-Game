@@ -36,7 +36,7 @@ public class DialogueTrigger : MonoBehaviour
             dialogueCue.SetActive(true);
             //Debug.Log(inkJSON.text);
 
-            if (Input.GetKeyDown("i"))
+            if (Input.GetKeyDown("i")||Input.GetKeyDown("q"))
             {
                 dialogueCue.SetActive(false);
                 
