@@ -54,7 +54,7 @@ public class AnimationController : MonoBehaviour
             if (textSplit.Length > 0)
             {
 
-                if (textSplit[0] == "Gloria(H): I mig")
+                if (textSplit[0] == "Gloria: I mig")
                 {
                     // Playing the blink animation and crash sound when Gloria crashes
                     if(!played1) 
@@ -67,7 +67,7 @@ public class AnimationController : MonoBehaviour
                 }
 
                 textSplit = textbox.GetComponent<TMP_Text>().text.Split('t');
-                if (textSplit[0] == "Gloria(S): Hi Doc")
+                if (textSplit[0] == "Gloria: Hi Doc")
                 {
                     // Playing opening animation once Gloria makes it to the doctor's office
                     if(!played2) 
@@ -79,7 +79,7 @@ public class AnimationController : MonoBehaviour
                 }
 
                 textSplit = textbox.GetComponent<TMP_Text>().text.Split('w');
-                if (textSplit[0] == "Gloria(S): Alright everyone, as mentioned in the previous lecture your assignment ")
+                if (textSplit[0] == "Gloria: Alright everyone, as mentioned in the previous lecture your assignment ")
                 {
                     // Playing fainting animation when Gloria is giving the lecture
                     if (!played3) 

@@ -100,7 +100,7 @@ public class CharacterDisplayControllerCP : MonoBehaviour
                     Character9.SetActive(true);
     }
     public void imTalking(){
-        
+
         Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
         Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
         Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
@@ -128,39 +128,26 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         if(character == "Gloria"){
             Character1.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Emily"){
             Character2.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character2.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Marsha"){
             Character3.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character3.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Glenn"){
             Character4.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character4.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character4.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "George"){
-            Character5.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character5.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character5.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Joseph"){
-            Character6.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character6.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character6.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Julie"){
-            Character7.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character7.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character7.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Sonya"){
-            Character8.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character8.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character8.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         } else if (character == "Henry"){
             Character9.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character9.transform.localScale = new Vector3(0.4f,0.4f,0);
-            Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         }
     }
 
