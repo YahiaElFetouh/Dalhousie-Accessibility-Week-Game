@@ -42,12 +42,9 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         Character9.SetActive(false);
     }
 
-    // Update is called once per frame
-
-
-
     public void charactersPresent(string characters){
 
+        // Setting all characters to not showing
         Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         Character3.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
@@ -59,6 +56,7 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 
         
+        // Showing every character included in the characters string
         foreach (char x in characters){
             Debug.Log("characters present: "+ x);
             if (x.CompareTo('1') == 0) {
@@ -89,18 +87,22 @@ public class CharacterDisplayControllerCP : MonoBehaviour
             Character9.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
             }
         } 
-                    Character1.SetActive(true);
-                    Character2.SetActive(true);
-                    Character3.SetActive(true);
-                    Character4.SetActive(true);
-                    Character5.SetActive(true);
-                    Character6.SetActive(true);
-                    Character7.SetActive(true);
-                    Character8.SetActive(true);
-                    Character9.SetActive(true);
-    }
-    public void imTalking(){
 
+        // Making the changes active
+        Character1.SetActive(true);
+        Character2.SetActive(true);
+        Character3.SetActive(true);
+        Character4.SetActive(true);
+        Character5.SetActive(true);
+        Character6.SetActive(true);
+        Character7.SetActive(true);
+        Character8.SetActive(true);
+        Character9.SetActive(true);
+    }
+
+    public void notTalking(){
+
+        // Default to make all characters not currently speaking
         Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
         Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
         Character3.transform.localScale = new Vector3(0.3f,0.3f,0);
@@ -123,8 +125,10 @@ public class CharacterDisplayControllerCP : MonoBehaviour
     }
 
     public void showCharacter(string character, int emotion){
-        imTalking();
+        notTalking();
 
+        // Getting character, choosing the appropriate emotion, 
+        // and showing they are currently speaking by increasing by increasing their size
         if(character == "Gloria"){
             Character1.GetComponent<SpriteRenderer>().sprite = images[emotion];
             Character1.transform.localScale = new Vector3(0.4f,0.4f,0);
@@ -151,6 +155,7 @@ public class CharacterDisplayControllerCP : MonoBehaviour
         }
     }
 
+    // Update is called once per frame
     void Update()
     {
 
