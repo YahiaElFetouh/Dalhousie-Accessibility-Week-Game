@@ -99,8 +99,11 @@ Due to external pressure Gloria chooses to continue ignoring the symptoms of the
 ->END
 
 = PositiveEnding2
-~changeBackground(6)
+~changeBackground(7)
+
+
 Sonya: Good afternoon Gloria, your file says you’re here to apply for disability insurance for a case of.... Chronic pain?
+
 Gloria(S): Yes, the symptoms aren’t easing up. This has been going on for too long and it’s time for me to take action.
 Sonya: Alright, I’ll let you know others have come through for something similar and have struggled with the process. Are you sure this is something you want to go through with?
 Gloria(S): ...I didn’t figure it should be harder than anyone else applying. Between work and Emily I’m not sure I’ll have the time...
