@@ -1,17 +1,29 @@
 EXTERNAL changeBackground(background)
+EXTERNAL charactersPresent(characters)
+EXTERNAL showCharacter(character,emotion)
 ->  TeachersHome
 
 === TeachersHome ===
 ~changeBackground(3)
+~charactersPresent("12")
+
+
+~showCharacter("Gloria",0)
 Gloria: Emily are you ready for school?
+~showCharacter("Emily",4)
 Emily: Yes mom I’ve got everything I need.
+~showCharacter("Gloria",0)
 Gloria: Alright, can you make your way to the school bus? I’m running late for work.
+~showCharacter("Emily",4)
 Emily: No worries, I can make it there. Have a good day at work mom. Love you!
+~showCharacter("Gloria",0)
 Gloria: Alright thanks honey, love you too. Have a good day at school.
 -> TeachersCar
 
 === TeachersCar ===
 ~changeBackground(0)
+~charactersPresent("1")
+~showCharacter("Gloria",0)
 Gloria(H): I hope Emily has an easier time with fractions soon,
 Gloria(H): I might have to…
 

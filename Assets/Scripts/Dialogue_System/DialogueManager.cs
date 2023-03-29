@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     private static DialogueManager instance;
     private GameManager gameManager;
+    private CharacterDisplayControllerCP characterController;
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -48,6 +49,7 @@ public class DialogueManager : MonoBehaviour
     public void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        characterController = FindObjectOfType<CharacterDisplayControllerCP>();
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
@@ -100,6 +102,17 @@ public class DialogueManager : MonoBehaviour
 
 
         });
+        currentStory.BindExternalFunction("charactersPresent", (string characters) => {
+            Debug.Log("Showing Glenn");
+            characterController.charactersPresent(characters);
+        });
+
+
+        currentStory.BindExternalFunction("showCharacter", (string character, int emotion) => {
+            Debug.Log("Showing :" + character + ", emotion:  "+ emotion);
+            characterController.showCharacter(character, emotion);
+        });
+
 
         continueDialogueCue.SetActive(true);
         Debug.Log("level status [0?]: " + levelOne_Guide);
