@@ -20,8 +20,8 @@ public class MainMenu : MonoBehaviour{
       musicVolumeSettings.audioVolumeStatus();
       musicToggleSettings.musicToggleStatus();
 
-      //Keenan added this
-      filter.dropdownStatus();
+      //Keenan added this (currently breaking main menu)
+      //filter.dropdownStatus();
    }
 
 
