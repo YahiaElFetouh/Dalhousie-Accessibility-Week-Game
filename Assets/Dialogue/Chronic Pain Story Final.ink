@@ -69,6 +69,9 @@ Gloria: I guess I could try and see a specialist, although I’m not sure I can 
 
 
 = PositiveEnding 
+~changeBackground(1)
+~charactersPresent("")
+Gloria was lucky enough to have a family doctor, who gave her a referral to a specialist. 13% of Nova Scotians do not have a family doctor. 
 ~changeBackground(4)
 ~charactersPresent("14")
 ~showCharacter("Glenn",9)
@@ -197,6 +200,9 @@ Gloria: ...Okay, I’ll have to think about it.
         -> NegativeEnding2
 
 = PositiveEnding4
+~changeBackground(1)
+~charactersPresent("")
+Gloria was lucky enough to have a family doctor, who gave her a referral to a specialist. 13% of Nova Scotians do not have a family doctor. 
 ~changeBackground(4)
 ~charactersPresent("14")
 ~showCharacter("Glenn",9)
