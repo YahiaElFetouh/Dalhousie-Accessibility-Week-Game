@@ -41,7 +41,7 @@ public class FilterDropdown : MonoBehaviour
             x.Type=selectedOption;
         }
 
-        PlayerPrefs.SetInt("selectedOption", 2);
+        PlayerPrefs.SetInt("selectedOption", selectedOption);
     }
 
 
