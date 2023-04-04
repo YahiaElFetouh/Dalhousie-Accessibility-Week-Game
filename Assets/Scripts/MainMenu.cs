@@ -19,14 +19,10 @@ public class MainMenu : MonoBehaviour{
       cursorSettings.cursorSizeStatus();
       musicVolumeSettings.audioVolumeStatus();
       musicToggleSettings.musicToggleStatus();
-
+      filter.dropdownStatus();
       //Keenan added this (currently breaking main menu)
       //filter.dropdownStatus();
    }
-
-
-
-
 
 
    /* Play the game from beginning to end */
