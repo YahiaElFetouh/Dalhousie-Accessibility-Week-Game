@@ -1,16 +1,16 @@
 //Background: Black Screen
 Narrator: Dmitri is a 20-year-old, single parent of a toddler, Alexia. In his second year of university, Dmitri did very well in his first year, obtaining an “A” in all of his classes.  
 
-Narrator: As a single parent, he is not able to start schoolwork until after his Alexia is fed, bathed, and put to bed, and after chores like dishes and laundry are completed. He often works until midnight, ...
-.. and then needs to get up at 6 a.m. to get Alexia ready, catch the bus, take Alexia to the daycare, and then walk to the university. Dmitri is not getting enough sleep.  
+Narrator: As a single parent, he is not able to start schoolwork until after his Alexia is fed, bathed, and put to bed, and after chores like dishes and laundry are completed. 
+Narrator: He often works until midnight, and then needs to get up at 6 a.m. to get Alexia ready, catch the bus, take Alexia to the daycare, and then walk to the university. Dmitri is not getting enough sleep.  
 
 Narrator: By October, however, things have suddenly changed and he has boundless energy. This is the complete opposite to the depressions he’s had—then, he couldn’t get out of bed. Now, he doesn’t need sleep!
 
-Narrator: He is able to work until 5 am, and then get up at 6 am and get out the door with Alexia. Even though he gets to the university on time, he seldom attends class because realizes he is much smarter... 
-.. than all the other students and no longer needs to attend class, other than to hand in assignments and for the midterm and final exams.  
+Narrator: He is able to work until 5 am, and then get up at 6 am and get out the door with Alexia. 
+Narrator: Even though he gets to the university on time, he seldom attends class because realizes he is much smarter than all the other students and no longer needs to attend class, other than to hand in assignments and for the midterm and final exams.  
 
-Narrator: Instead, he hangs out playing pool, walking along the riverbank trails for hours, and going to the campus bar. Always shy, he’s now boisterous, always laughing loudly, and...
-.. having a million conversations, talking a mile a minute.  
+Narrator: Instead, he hangs out playing pool, walking along the riverbank trails for hours, and going to the campus bar. 
+Narrator: Always shy, he’s now boisterous, always laughing loudly, and having a million conversations, talking a mile a minute.  
 
 Narrator: Sometimes people don’t seem to understand what he’s talking about, but again, he knows he’s smarter than them and he’s the funniest person in the room--they just don’t get it. 
 
@@ -82,7 +82,7 @@ Narrator: The cause of this sudden outburst is puzzling, but I have no patience 
 === curious ===
 Dr. Higashi: I wanted to talk to you about the course. For the first few weeks of the term, you attended regularly, and were doing really good work.
 
-Dr. Higashi: I’ve noticed your absence and that your academic work is failing.  I’m wondering if there is something happening in your life, and if you are doing ok?
+Dr. Higashi: I’ve noticed your absence and that your academic work is failing. I’m wondering if there is something happening in your life, and if you are doing ok?
 
 Dmitri: I’m great! The problem is with you and your useless class!
 
@@ -104,8 +104,8 @@ Narrator: I am shocked by his behavior. Though I am concerned for Dmitri, I have
 
 Dr. Higashi: What is going in with you? Have you been drinking? Are you on drugs? Whatever it is, you need help. 
 
-Dr. Higashi: Because of your strong start in the course, I’m going to give you the benefit of the doubt. I’m feeling generous and I’ll give you a week to come to your senses, apologize, change your... 
-.. behaviour and attitude, start attending class, and actually put in some effort. 
+Dr. Higashi: Because of your strong start in the course, I’m going to give you the benefit of the doubt. 
+Dr. Higashi: I’m feeling generous and I’ll give you a week to come to your senses, apologize, change your behaviour and attitude, start attending class, and actually put in some effort. 
 
 Dr. Higashi: You’re not rewriting this paper, though-- the grade stays. 
 
@@ -130,7 +130,7 @@ Narrator: The confrontation left me baffled and confused. What had happened to D
     
 Narrator: After being escorted out, Dmitri went to the daycare to pick up his daughter. However, the daycare staff were alarmed by his behavior and refused to allow him to take Alexia. 
 
-Narrator: Dmitri suddenly burst into tears. 
+Narrator: Dmitri suddenly bursts into tears. 
 
 Dmitri: But she is my daughter! How can you refuse to let me take her!? 
 
@@ -138,16 +138,16 @@ Narrator: Concerned for Alexia’s safety, the daycare staff felt that the best 
 
 Narrator: Alexia was taken to a child crisis centre and the police were called to pick up Dmitri.  
 
-Narrator: In the police car, he went back and forth from yelling angrily that he was being kidnapped, crying and laughing. Thankfully, the police recognized Dmitri’s mental distress and... 
-.. opted to take him to the hospital.  
+Narrator: In the police car, he went back and forth from yelling angrily that he was being kidnapped, crying and laughing. 
+Narrator: Thankfully, the police recognized Dmitri’s mental distress and opted to take him to the hospital.  
 
 // Background Black Screen
 
-Narrator: At the hospital, Dmitri was diagnosed with Bipolar I Disorder and was admitted to a psychiatric ward because while in this state, he may be reckless with his personal well-being, and is at risk of...
-.. suicide. He was to remain in the hospital for 2 weeks, until the medication he takes can level his mood. 
+Narrator: At the hospital, Dmitri was diagnosed with Bipolar Disorder and was admitted to a psychiatric ward because while in this state, he may be reckless with his personal well-being, and is at risk of suicide. 
+Narrator: He was to remain in the hospital for 2 weeks, until the medication he takes can level his mood. 
 
-Narrator: Eventually, Dmitri got his daughter back into his custody, but was ultimately suspended from classes. He was unable to return to classes that semester and because of his mental state, didn’t...
-.. formally withdraw from his classes and so never managed to get any of his tuition back. 
+Narrator: Eventually, Dmitri got his daughter back into his custody, but was ultimately suspended from classes. 
+Narrator: He was unable to return to classes that semester and because of his mental state, didn’t formally withdraw from his classes and so never managed to get any of his tuition back. 
     -> END
     
 === somethings_wrong ===
@@ -177,8 +177,8 @@ Narrator: In his current state, he needs help that I alone simply cannot provide
 
 Narrator: The mobile crises unit soon arrived and took over the situation, including calling an ambulance.   
 
-Narrator: After a lengthy assessment at the hospital, Dmitri was diagnosed with Bipolar I Disorder and admitted to a psychiatric ward because while in this state, he may be reckless with his personal... 
-.. well-being, and is at risk of suicide. He was to remain in the hospital for 2 weeks, until the medication he takes can level his mood. 
+Narrator: After a lengthy assessment at the hospital, Dmitri was diagnosed with Bipolar I Disorder and admitted to a psychiatric ward because while in this state, he may be reckless with his personal well-being, and is at risk of suicide. 
+Narrator: He was to remain in the hospital for 2 weeks, until the medication he takes can level his mood. 
 
 Narrator: Eventually, Dmitri got his daughter back into his custody. 
 
@@ -188,8 +188,8 @@ Narrator: The accessibility office gave him a choice: take a medical withdrawal 
 
 Narrator: Dmitri will be on his medications for the rest of his life.  
 
-Narrator: When he returns to school the next term, the medications make him very groggy, making attending classes and finishing assignments very difficult. He is advised to take a lighter... 
-.. course load. Because of this, it will take him six years to complete his bachelor’s degree, but he eventually does graduate. 
+Narrator: When he returns to school the next term, the medications make him very groggy, making attending classes and finishing assignments very difficult. 
+Narrator: He is advised to take a lighter course load. Because of this, it will take him six years to complete his bachelor’s degree, but he eventually does graduate. 
 
 Narrator: He and Alexia are doing well. 
     -> END

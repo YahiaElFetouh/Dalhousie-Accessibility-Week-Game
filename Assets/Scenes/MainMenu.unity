@@ -208,6 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91493894}
   - component: {fileID: 91493895}
+  - component: {fileID: 91493896}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -265,6 +266,22 @@ MonoBehaviour:
   m_ConstrainToContainerRight: 0
   m_AllowTouchExplore: 1
   m_DoubleCheckUIElementsPositions: 1
+--- !u!114 &91493896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91493893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 0}
+  musicVolumeSettings: {fileID: 0}
+  musicToggleSettings: {fileID: 0}
+  filter: {fileID: 0}
 --- !u!1 &97211364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1218,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 281205083}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &281205086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,9 +1761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSettings: {fileID: 97211368}
-  musicVolumeSettings: {fileID: 357570156}
-  musicToggleSettings: {fileID: 1401423835}
+  cursorSettings: {fileID: 0}
+  musicVolumeSettings: {fileID: 0}
+  musicToggleSettings: {fileID: 0}
+  filter: {fileID: 0}
 --- !u!4 &361484134
 Transform:
   m_ObjectHideFlags: 0
@@ -4582,6 +4612,7 @@ GameObject:
   - component: {fileID: 1023457497}
   - component: {fileID: 1023457496}
   - component: {fileID: 1023457499}
+  - component: {fileID: 1023457500}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4668,6 +4699,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   colorblindShader: {fileID: 4800000, guid: b35b8f7ae8cf168488129d5f5f39ebf4, type: 3}
+--- !u!114 &1023457500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023457495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178f6c2659dbb54488491630ed620436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSettings: {fileID: 97211368}
+  musicVolumeSettings: {fileID: 357570156}
+  musicToggleSettings: {fileID: 1401423835}
+  filter: {fileID: 1801312819}
 --- !u!1001 &1102313491
 PrefabInstance:
   m_ObjectHideFlags: 0

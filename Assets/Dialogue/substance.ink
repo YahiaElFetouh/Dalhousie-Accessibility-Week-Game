@@ -6,14 +6,14 @@
 // Background starts in Allie's room
 
 Allie: I wake up to the deafening sound of my alarm clock.
-...After how tough last night was, I can’t even fathom how I’m going to make it to class today.
-...Remembering that I have a test today, I begrudgingly get out of bed.
-...As I open my closet door, I accidentally bump my arm on my nightstand. The pain causes me to inhale sharply.
-...The dried gouges on my arm still sting from the night before. There is no way they could be hidden under a shirt.
-..I guess I will have to wear my jacket to class today.
-...I have been trying to control my opioid use for a number of years to no avail.
-...Running out of options has led me to pain. Cutting is my only escape.
-...The numb feeling that takes over my body is preferable to the pain I would feel otherwise. 
+After how tough last night was, I can’t even fathom how I’m going to make it to class today.
+Remembering that I have a test today, I begrudgingly get out of bed.
+As I open my closet door, I accidentally bump my arm on my nightstand. The pain causes me to inhale sharply.
+The dried gouges on my arm still sting from the night before. There is no way they could be hidden under a shirt.
+I guess I will have to wear my jacket to class today.
+I have been trying to control my opioid use for a number of years to know avail.
+Running out of options has led me to pain. Cutting is my only escape.
+The numb feeling that takes over my body is preferable to the pain I would feel otherwise. 
     -> schoolHallway
 
 = schoolHallway
@@ -23,12 +23,12 @@ Allie: I wake up to the deafening sound of my alarm clock.
 Later that day...
 
 Allie(J): I had made it to school on the bus without anyone noticing the scars.
-...But that was the easy part. Everyone on the bus wears their coat.
-...I walk briskly down the hall, hoping to get to class as quickly as possible without drawing attention to myself.
-...I need to keep moving to avoid being marked as tardy. Nothing draws more attention to a person than walking into class late.
-...As I turn the corner of the second floor, I find myself face to face with one of the school’s vice principals.
-...My heart sinks in my chest. I have grown to distrust the school administration, and I’ve got the feeling that they don’t trust me either.
-...I try to sneak by him, but my attempt was futile.
+But that was the easy part. Everyone on the bus wears their coat.
+I walk briskly down the hall, hoping to get to class as quickly as possible without drawing attention to myself.
+I need to keep moving to avoid being marked as tardy. Nothing draws more attention to a person than walking into class late.
+As I turn the corner of the second floor, I find myself face to face with one of the school’s vice principals.
+My heart sinks in my chest. I have grown to distrust the school administration, and I’ve got the feeling that they don’t trust me either.
+I try to sneak by him, but my attempt was futile.
 VP: Stop right there, young lady!
 My heels screeched on the hallway floor.
 VP: Where are you headed in such a hurry? 
@@ -53,12 +53,12 @@ After a short pause, the vice principal’s expression changes. His next questio
 VP: Is there a reason why you feel uncomfortable taking off your coat before class?
 VP: It is okay to tell me.
 For a second I consider it, but quickly come to my senses.
-....If he sees the cuts, what if he calls the police? What if he finds out about my opioid use?
-....I worry that I’d be suspended. I’d be judged. People would see me as a failure.
-....I cannot have him telling my family. This is my burden to bear.
-....I sleeplessly come up with a lie.
+If he sees the cuts, what if he calls the police? What if he finds out about my opioid use?
+I worry that I’d be suspended. I’d be judged. People would see me as a failure.
+I cannot have him telling my family. This is my burden to bear.
+I sleeplessly come up with a lie.
 Allie: The air conditioning makes the classroom a bit chilly, and my sweaters are still packed up for the summer.
-....I could tell from his expression that he doesn’t buy it, but he still seems to want to help. After a long sigh, I decide to give him something closer to the truth.
+I could tell from his expression that he doesn’t buy it, but he still seems to want to help. After a long sigh, I decide to give him something closer to the truth.
 Allie: I have not been doing well emotionally. I need the comfort of my coat.
 VP: If that’s the case, I’m not going to pressure you to give me details.
 VP: But I encourage you to have a chat with the guidance counsellor.
@@ -135,7 +135,7 @@ The meeting with the practitioner went quickly. After being asked a few question
 
 Flipping through the self-help book, I realized that most of the information was too general to apply to my situation. The book no doubt had some good advice, but it was of little help to me.
 I felt as though my issues had been dismissed. 
-I am tired of feeling worthless. I want to feel like I am worthy of receiving help without being shamed for my substance use, but it feels as though I’m aways dismissed.
+I am tired of feeling worthless. I want to feel like I am worthy of receiving help without being shamed for my substance use, but it feels as though I’m always dismissed.
 I worry that this whole situation could repeat itself. I still cannot control my substance use. I still have to hide it from others.
 It is hard to remain hopeful that anything will ever change.
 
