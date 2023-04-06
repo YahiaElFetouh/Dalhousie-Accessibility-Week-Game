@@ -1833,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 1867128881}
   canvas: {fileID: 2033600873}
+  pause: {fileID: 0}
 --- !u!114 &346669463
 MonoBehaviour:
   m_ObjectHideFlags: 0
