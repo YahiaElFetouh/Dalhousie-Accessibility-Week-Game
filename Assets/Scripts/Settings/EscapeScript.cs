@@ -8,8 +8,7 @@ public class EscapeScript : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject canvas;
 
-    [Serialized] private 
-
+ 
     private bool settingsActive = false;
 
     private void Update()
