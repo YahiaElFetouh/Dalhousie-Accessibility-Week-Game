@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story4-Chronic_Pain.unity
     guid: d4a5d4475a4fb40c9b4fd237d6f81cf5
+  - enabled: 1
+    path: Assets/Scenes/Credits_Page(2).unity
+    guid: 479b03ca5bc232f48a9f5752cdb34c3a
   m_configObjects: {}
