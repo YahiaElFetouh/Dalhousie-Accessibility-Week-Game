@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 91493894}
   - component: {fileID: 91493895}
   - component: {fileID: 91493896}
+  - component: {fileID: 91493897}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -238,8 +239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2124.1, y: 1080}
+  m_AnchoredPosition: {x: -0.0032068, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91493895
 MonoBehaviour:
@@ -282,6 +283,14 @@ MonoBehaviour:
   musicVolumeSettings: {fileID: 0}
   musicToggleSettings: {fileID: 0}
   filter: {fileID: 0}
+--- !u!222 &91493897
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91493893}
+  m_CullTransparentMesh: 1
 --- !u!1 &97211364
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,8 +879,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 957, y: 541}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 1699.1, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202630948
 MonoBehaviour:
@@ -5437,6 +5446,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1447578335}
   - component: {fileID: 1447578337}
+  - component: {fileID: 1447578339}
+  - component: {fileID: 1447578338}
   - component: {fileID: 1447578336}
   m_Layer: 5
   m_Name: Background
@@ -5460,9 +5471,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1060, y: 539}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.0008544922, y: 0}
+  m_SizeDelta: {x: -220.88, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447578336
 MonoBehaviour:
@@ -5486,7 +5497,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 416623ccda63046d78afad2623def3e8, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5502,6 +5513,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447578334}
   m_CullTransparentMesh: 1
+--- !u!114 &1447578338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447578334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1447578339
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447578334}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1456979395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6056,6 +6111,7 @@ GameObject:
   - component: {fileID: 1569053560}
   - component: {fileID: 1569053559}
   - component: {fileID: 1569053558}
+  - component: {fileID: 1569053562}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6146,6 +6202,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!222 &1569053562
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569053557}
+  m_CullTransparentMesh: 1
 --- !u!1 &1570711700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8274,6 +8338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997455508}
   - component: {fileID: 1997455509}
+  - component: {fileID: 1997455510}
   m_Layer: 5
   m_Name: GameScenes
   m_TagString: Untagged
@@ -8333,6 +8398,14 @@ MonoBehaviour:
   m_ConstrainToContainerRight: 0
   m_AllowTouchExplore: 1
   m_DoubleCheckUIElementsPositions: 1
+--- !u!222 &1997455510
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997455507}
+  m_CullTransparentMesh: 1
 --- !u!1 &2043001019
 GameObject:
   m_ObjectHideFlags: 0
