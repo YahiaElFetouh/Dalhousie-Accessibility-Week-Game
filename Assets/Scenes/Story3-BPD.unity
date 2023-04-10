@@ -179,6 +179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCharacter: 
   previousCharacter: 
+  currentEmotion: 
+  previousEmotion: 
+  images: []
   Character1: {fileID: 0}
   Character2: {fileID: 0}
 --- !u!114 &213030390
@@ -1304,7 +1307,7 @@ RectTransform:
   m_GameObject: {fileID: 920590414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1354,7 +1357,7 @@ SpriteRenderer:
   m_SortingLayerID: 1597249469
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ae2600b4d9c47340ad1cf96a0314a1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0906c031c875f48f495694588827ea61, type: 3}
   m_Color: {r: 0.5627568, g: 1, b: 0.30588233, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -1912,7 +1915,7 @@ RectTransform:
   m_GameObject: {fileID: 1801408332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1962,7 +1965,7 @@ SpriteRenderer:
   m_SortingLayerID: 1597249469
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ae2600b4d9c47340ad1cf96a0314a1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e4d582de74b84385ba2c9705cc04e5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

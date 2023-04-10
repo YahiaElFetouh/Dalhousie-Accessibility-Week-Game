@@ -45,23 +45,23 @@ public class CharacterDisplayControllerBPD : MonoBehaviour
             {
                 if (currentCharacter == "Dr. Higashi")
                 {
-                    Character1.transform.localScale = new Vector3(5,5,0);
+                    Character1.transform.localScale = new Vector3(0.5f,0.5f,0);
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                    Character2.transform.localScale = new Vector3(3,3,0);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
                 if (currentCharacter == "Dmitri")
                 {
-                    Character1.transform.localScale = new Vector3(3,3,0);
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    Character2.transform.localScale = new Vector3(5,5,0);
+                    Character2.transform.localScale = new Vector3(0.5f,0.5f,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                 }
                 if (currentCharacter == "Narrator")
                 {
-                    Character1.transform.localScale = new Vector3(3,3,0);
+                    Character1.transform.localScale = new Vector3(0.3f,0.3f,0);
                     Character1.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
-                    Character2.transform.localScale = new Vector3(3,3,0);
+                    Character2.transform.localScale = new Vector3(0.3f,0.3f,0);
                     Character2.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 }
                 previousCharacter = currentCharacter;
