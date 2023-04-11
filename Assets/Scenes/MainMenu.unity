@@ -9435,7 +9435,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Normal Vision
+    - m_Text: Sighted
       m_Image: {fileID: 0}
     - m_Text: Protanopia
       m_Image: {fileID: 0}
