@@ -106,7 +106,8 @@ Gloria knew it would be helpful to talk with others who also experience chronic 
 = InformationAndEnding2
 ~changeBackground(1)
 ~charactersPresent("")
-Having been officially diagnosed with chronic pain by a specialist, and given prescriptions to help ease the pain, now Gloria could also contact a support group so they where could discuss with others things like the challenges they face, and share different techniques, strategies, and resources to improve their quality of life.
+Having been officially diagnosed with chronic pain by a specialist, and given prescriptions to help ease the pain, now Gloria could also contact a support group so they where could discuss with others things like the challenges they face, ...
+and share different techniques, strategies, and resources to improve their quality of life.
 -> END
 
 = NegativeEnding

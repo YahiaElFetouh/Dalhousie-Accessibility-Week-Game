@@ -2653,7 +2653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 326427105}
   dialogueText: {fileID: 1517053838}
-  typeWriterSpeed: 60
+  typeWriterSpeed: 45
   choices:
   - {fileID: 1863070720}
   - {fileID: 1905964514}
@@ -5363,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_Color.a
-      value: 0.5882353
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 9200171551219452173, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_fontAsset
