@@ -2027,7 +2027,7 @@ PrefabInstance:
     - target: {fileID: 1280405206481119119, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c621d52e2c41ccd4e9df3d9d75c46659, type: 3}
+      objectReference: {fileID: 21300000, guid: 39269bb5865dc41cfad0c0b96cc21f70, type: 3}
     - target: {fileID: 8470925647991514674, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
       propertyPath: m_Name
       value: BackgroundComponent (2)
@@ -4936,7 +4936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306007467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -121, y: -662, z: 11.49115}
+  m_LocalPosition: {x: -121, y: -843, z: 11.49115}
   m_LocalScale: {x: 60, y: 60, z: 1}
   m_Children: []
   m_Father: {fileID: 1025257257}
@@ -5411,7 +5411,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f912b2a071eab1341b060c9e522e8314, type: 3}
   - {fileID: 21300000, guid: 3cbc28b76edfd7545a034c46ade43882, type: 3}
   - {fileID: 21300000, guid: c621d52e2c41ccd4e9df3d9d75c46659, type: 3}
-  switchScenes: 0a000000230000002d00000064000000
+  - {fileID: 21300000, guid: c621d52e2c41ccd4e9df3d9d75c46659, type: 3}
+  switchScenes: 010000000a000000230000002d00000064000000
 --- !u!4 &1633724833
 Transform:
   m_ObjectHideFlags: 0
