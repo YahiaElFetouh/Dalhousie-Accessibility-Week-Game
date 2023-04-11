@@ -999,7 +999,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 98baec781d46fe8439cf133cc4f807ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0c4d893f01426471793fa28e21839066, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1651,7 +1651,7 @@ PrefabInstance:
     - target: {fileID: 1280405206481119119, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 309433e344b68364fa1ece5f89002ca9, type: 3}
+      objectReference: {fileID: 21300000, guid: 0d3aebe24a125d5498cabbf3bf29cd3d, type: 3}
     - target: {fileID: 8470925647991514674, guid: d693ac7c252404643ba6947d73b22cfc, type: 3}
       propertyPath: m_Name
       value: BackgroundComponent (1)
@@ -2085,8 +2085,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   original: {fileID: 1533712297}
   backgrounds:
+  - {fileID: 21300000, guid: 309433e344b68364fa1ece5f89002ca9, type: 3}
   - {fileID: 21300000, guid: 3cbc28b76edfd7545a034c46ade43882, type: 3}
-  switchScenes: 14000000
+  switchScenes: 0a00000030000000
 --- !u!1 &1895428850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2213,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontSize
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4433160157599194980, guid: e15f0d2ba362c43d8baf204571cf4cdf, type: 2}
+    - target: {fileID: 9200171549269325983, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 9200171550159372806, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2235,6 +2268,26 @@ PrefabInstance:
     - target: {fileID: 9200171550842543164, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MakeChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200171551002091263, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20dd386bc5897f14fad5212fca038007, type: 3}
@@ -2442,4 +2495,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCue: {fileID: 136622474}
-  inkJSON: {fileID: 4900000, guid: b47aa206548c11b41a525f38175daa4c, type: 3}
+  inkJSON: {fileID: 4900000, guid: e2a1db7f46e2933499c9461b9e12d879, type: 3}
